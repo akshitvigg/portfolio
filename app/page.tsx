@@ -35,24 +35,24 @@ const slugs = [
 export default function Home() {
   return (
     <div>
-      <div className="mt-16  items-center flex justify-around ">
-        <div className="ml-24">
-          <p className="  font-bold text-4xl">Hi I'm Akshit</p>
-          <p>Full Stack developer </p>
-        </div>
-        <div className="mr-20 ">
+      <div className="mt-16  items-center flex  ">
+        <div className="pr-7 ml-[270px]  ">
           <Image
             className="  rounded-full"
             src={
               "https://i.pinimg.com/736x/aa/c8/02/aac8024b2258aad7262895c4b0bccd79.jpg"
             }
             alt="ds"
-            width={150}
+            width={100}
             height={300}
           />
         </div>
+        <div className="">
+          <p className="  font-bold text-4xl">Hi I'm Akshit</p>
+          <p>Full Stack developer </p>
+        </div>
       </div>
-      <p className="pl-[270px] pt-5  text-xl font-bold ">About</p>
+      <p className="pl-[270px] pt-10  text-xl font-bold ">About</p>
       <p className="pl-[270px]  w-[1050px] text-neutral-400">
         I’m Akshit, a self-taught programmer who loves diving into new things
         and figuring them out as I go. Right now, I’m learning Japanese and
