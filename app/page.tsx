@@ -38,11 +38,11 @@ export default function Home() {
   return (
     <div>
       <div className="mt-16  items-center flex justify-around ">
-        <div className="    ">
+        <div className="ml-24">
           <p className="  font-bold text-4xl">Hi I'm Akshit</p>
           <p>Full Stack developer </p>
         </div>
-        <div className=" ">
+        <div className="mr-24 ">
           <Image
             className="  rounded-full"
             src={
@@ -54,8 +54,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <p className="pl-[230px] pt-5  text-xl font-bold ">About</p>
-      <p className="pl-[230px]  w-[1050px] text-neutral-500">
+      <p className="pl-[270px] pt-5  text-xl font-bold ">About</p>
+      <p className="pl-[270px]  w-[1050px] text-neutral-500">
         I’m Akshit, a self-taught programmer who loves diving into new things
         and figuring them out as I go. Right now, I’m learning Japanese and
         exploring cool areas like AI and blockchain. I’m all about building
@@ -64,9 +64,9 @@ export default function Home() {
         days, I’m focused on creating stuff that actually works and solving
         problems with technology.
       </p>
-      <p className=" text-xl font-bold mt-10 flex pl-[350px]">Skills</p>
-      <div className=" flex  h-72 ml-28 justify-center">
-        <div className=" rounded-md flex justify-end w-[700px] border border-zinc-800 ">
+      <p className=" text-xl font-bold mt-10 flex pb-2 pl-[270px]">Skills</p>
+      <div className=" flex  h-72 ml-8 justify-center">
+        <div className=" rounded-md flex justify-end pr-6 w-[780px] border border-zinc-800 ">
           <IconCloud iconSlugs={slugs} />
         </div>
       </div>
