@@ -102,7 +102,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
+    <div className=" min-h-screen font-sans bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
       <div className="sm:pt-16  items-center flex  ">
         <div className="sm:pr-7 pl-3 sm:pl-0 pr-5 sm:ml-[400px]  ">
           <Image
@@ -116,19 +116,20 @@ export default function Home() {
           />
         </div>
         <div className="">
-          <p className="  font-bold text-4xl">Hi I'm Akshit</p>
-          <p>Full Stack developer </p>
+          <p className="font-bold text-4xl">Hi I'm Akshit</p>
+          <p className=" pt-2">
+            I mess with code, break stuff, and make it better
+          </p>
         </div>
       </div>
       <p className="sm:pl-[400px] pt-10  text-xl font-bold ">About</p>
       <p className="sm:pl-[400px]  sm:w-[1150px] text-neutral-500 dark:text-neutral-400">
-        I’m Akshit, a self-taught programmer who loves diving into new things
-        and figuring them out as I go. Right now, I’m learning Japanese and
-        exploring cool areas like AI and blockchain. I’m all about building
-        things with code, breaking them down, and making them better. I’ve
-        always had an interest in art, even if I’m not great at it, but these
-        days, I’m focused on creating stuff that actually works and solving
-        problems with technology.
+        I’m a 20-year-old CS student. I’m all about building things with code,
+        breaking them down, and making them better. I’ve always had an interest
+        in art, but I’m more focused on creating stuff that actually works and
+        solving problems with technology. Robots catch my attention, and I love
+        figuring out how they work.When I’m not coding, you’ll probably find me
+        reading or messing around with my Japanese studies.
       </p>
       <p className=" text-xl font-bold mt-10 flex pb-2 sm:pl-[400px]">Skills</p>
       <div className=" flex  h-72 sm:ml-8 justify-center">
