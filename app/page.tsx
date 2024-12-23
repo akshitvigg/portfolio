@@ -5,12 +5,19 @@ import { Card } from "@/components/projectsCard";
 import { FloatingDock } from "@/components/ui/floating-dock";
 
 import {
+  IconBrandDiscord,
   IconBrandGithub,
   IconBrandGmail,
   IconBrandLinkedin,
   IconBrandX,
   IconHome,
+  IconMoon,
+  IconMoon2,
+  IconMoonFilled,
+  IconMoonStars,
+  IconSunMoon,
 } from "@tabler/icons-react";
+import { title } from "process";
 
 const slugs = [
   "flask",
@@ -80,10 +87,15 @@ const items = [
   },
   {
     title: "LinkedIn",
-    icon: (
-      <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
+    icon: <IconBrandLinkedin />,
     href: "https://www.linkedin.com/in/akshit-vig-a56377303",
+  },
+  {
+    title: "Theme",
+    icon: (
+      <IconMoon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "",
   },
 ];
 
@@ -185,7 +197,10 @@ export default function HomeEl() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center  w-full">
+      <p className="  border-t flex mt-4 ml-96 mr-[355px] border-neutral-700 pt-4 justify-center">
+        Made with ❤️ by Akshit
+      </p>
+      <div className="flex items-center justify-center h-24  w-full">
         <FloatingDock mobileClassName="translate-y-20" items={items} />
       </div>
     </div>
