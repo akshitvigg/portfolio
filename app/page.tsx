@@ -175,7 +175,7 @@ export default function Home() {
               projLink="https://anim-gules.vercel.app/"
             />
             <Card
-              src={"/secondBrain.png"}
+              src={"/secbrain.png"}
               projectTitle="SecondBrain"
               description="A site to save and organize content like YouTube videos, tweets, documents and more. share your 'brain' with friends to explore your collection."
               toolsUsed={secBrainarr}
