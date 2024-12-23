@@ -93,11 +93,11 @@ export default function Home() {
       </div>
       <div>
         <p className=" text-3xl mt-8 flex font-bold justify-center">Projects</p>
-        <div className="pl-7 flex justify-center">
+        <div className="pl-7 pt-7 flex justify-center">
           <div className=" pb-5 grid gap-3 grid-cols-2">
-            <Card src={"/anitaro.png"} />
-            <Card src={"/secondBrain.png"} />
-            <Card src={"/astroquest.png"} />
+            <Card src={"/anitaro.png"} projectTitle="アニタロ" />
+            <Card src={"/secondBrain.png"} projectTitle="SecondBrain" />
+            <Card src={"/astroquest.png"} projectTitle="AstroQuest" />
           </div>
         </div>
       </div>
