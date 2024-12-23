@@ -95,9 +95,21 @@ export default function Home() {
         <p className=" text-3xl mt-8 flex font-bold justify-center">Projects</p>
         <div className="pl-7 pt-7 flex justify-center">
           <div className=" pb-5 grid gap-3 grid-cols-2">
-            <Card src={"/anitaro.png"} projectTitle="アニタロ" />
-            <Card src={"/secondBrain.png"} projectTitle="SecondBrain" />
-            <Card src={"/astroquest.png"} projectTitle="AstroQuest" />
+            <Card
+              src={"/anitaro.png"}
+              projectTitle="アニタロ"
+              description="A site where users can watch anime and read manga with a smooth and enjoyable experience. Built with a user-friendly interface for effortless content exploration."
+            />
+            <Card
+              src={"/secondBrain.png"}
+              projectTitle="SecondBrain"
+              description="A site to save and organize content like YouTube videos, tweets, documents and more. share your 'brain' with friends to explore your collection."
+            />
+            <Card
+              src={"/astroquest.png"}
+              projectTitle="AstroQuest"
+              description="A site to watch anime and read manga all in one place.Simple and Seamless"
+            />
           </div>
         </div>
       </div>
