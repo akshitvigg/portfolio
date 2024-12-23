@@ -41,7 +41,7 @@ export const Card = ({
         ))}
       </div>
       <Link href={projLink}>
-        <button className=" hover:bg-zinc-300 active:scale-105 transition-all duration-150 rounded-md py-1 ml-2 mt-3 flex border-neutral-300 border items-center dark:bg-white dark:text-black text-sm px-2">
+        <button className=" dark:hover:bg-zinc-300 hover:bg-zinc-300 active:scale-105 transition-all duration-150 rounded-md py-1 ml-2 mt-3 flex border-neutral-300 border items-center dark:bg-white dark:text-black text-sm px-2">
           <img src="/network.png" width={12} />
           <p className="pl-2  ">Website</p>
         </button>
