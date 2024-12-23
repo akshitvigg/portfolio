@@ -2,6 +2,19 @@ import { IconCloud } from "@/components/skillssphere";
 import Image from "next/image";
 import TechStackBtn from "@/components/skillschips";
 import { Card } from "@/components/projectsCard";
+import { FloatingDock } from "@/components/ui/floating-dock";
+import { Home, icons, Mail } from "lucide-react";
+import {
+  IconBrandGithub,
+  IconBrandGmail,
+  IconBrandLinkedin,
+  IconBrandX,
+  IconExchange,
+  IconHome,
+  IconNewSection,
+  IconTerminal2,
+} from "@tabler/icons-react";
+import { title } from "process";
 
 const slugs = [
   "flask",
@@ -39,9 +52,48 @@ const secBrainarr = ["React", "Typescript", "TailwindCSS", "MongoDB"];
 const astroquestarr = ["React", "Javascript"];
 const pawpalarr = ["React", "Javascript", "MongoDB"];
 
-export default function Home() {
+const items = [
+  {
+    title: "Home",
+    icon: (
+      <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "/",
+  },
+  {
+    title: "Mail",
+    icon: (
+      <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+
+  {
+    title: "Twitter",
+    icon: (
+      <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+  {
+    title: "GitHub",
+    icon: (
+      <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+  {
+    title: "LinkedIn",
+    icon: (
+      <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#",
+  },
+];
+
+export default function HomeEl() {
   return (
-    <div className="min-h-screen bg-neutral-900 text-white">
+    <div className="min-h-screen bg-white dark:bg-neutral-900 text-white">
       <div className="pt-16  items-center flex  ">
         <div className="pr-7 ml-[400px]  ">
           <Image
@@ -136,6 +188,9 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center  w-full">
+        <FloatingDock mobileClassName="translate-y-20" items={items} />
       </div>
     </div>
   );
