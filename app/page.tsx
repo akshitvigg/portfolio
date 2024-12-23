@@ -1,23 +1,19 @@
+"use client";
 import { IconCloud } from "@/components/skillssphere";
 import Image from "next/image";
 import TechStackBtn from "@/components/skillschips";
 import { Card } from "@/components/projectsCard";
 import { FloatingDock } from "@/components/ui/floating-dock";
-
 import {
-  IconBrandDiscord,
   IconBrandGithub,
   IconBrandGmail,
   IconBrandLinkedin,
   IconBrandX,
   IconHome,
   IconMoon,
-  IconMoon2,
-  IconMoonFilled,
-  IconMoonStars,
-  IconSunMoon,
+  IconSun,
 } from "@tabler/icons-react";
-import { title } from "process";
+import { useTheme } from "@/components/ui/theme-provider";
 
 const slugs = [
   "flask",
@@ -55,53 +51,58 @@ const secBrainarr = ["React", "Typescript", "TailwindCSS", "MongoDB"];
 const astroquestarr = ["React", "Javascript"];
 const pawpalarr = ["React", "Javascript", "MongoDB"];
 
-const items = [
-  {
-    title: "Home",
-    icon: (
-      <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "/",
-  },
-  {
-    title: "Mail",
-    icon: (
-      <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "mailto:akshitvig48@gmail.com",
-  },
+export default function Home() {
+  const { theme, toggleTheme } = useTheme();
+  const items = [
+    {
+      title: "Home",
+      icon: (
+        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "/",
+    },
+    {
+      title: "Mail",
+      icon: (
+        <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "mailto:akshitvig48@gmail.com",
+    },
 
-  {
-    title: "Twitter",
-    icon: (
-      <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "https://x.com/AkshitVig4",
-  },
-  {
-    title: "GitHub",
-    icon: (
-      <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "https://github.com/akshitvigg",
-  },
-  {
-    title: "LinkedIn",
-    icon: <IconBrandLinkedin />,
-    href: "https://www.linkedin.com/in/akshit-vig-a56377303",
-  },
-  {
-    title: "Theme",
-    icon: (
-      <IconMoon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "",
-  },
-];
+    {
+      title: "Twitter",
+      icon: (
+        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://x.com/AkshitVig4",
+    },
+    {
+      title: "GitHub",
+      icon: (
+        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "https://github.com/akshitvigg",
+    },
+    {
+      title: "LinkedIn",
+      icon: <IconBrandLinkedin />,
+      href: "https://www.linkedin.com/in/akshit-vig-a56377303",
+    },
+    {
+      title: "Theme",
+      icon:
+        theme === "light" ? (
+          <IconMoon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        ) : (
+          <IconSun className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        ),
+      href: "#",
+      onClick: toggleTheme,
+    },
+  ];
 
-export default function HomeEl() {
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-900 text-white">
+    <div className="min-h-screen bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
       <div className="pt-16  items-center flex  ">
         <div className="pr-7 ml-[400px]  ">
           <Image
@@ -120,7 +121,7 @@ export default function HomeEl() {
         </div>
       </div>
       <p className="pl-[400px] pt-10  text-xl font-bold ">About</p>
-      <p className="pl-[400px]  w-[1150px] text-neutral-400">
+      <p className="pl-[400px]  w-[1150px] text-neutral-500 dark:text-neutral-400">
         I’m Akshit, a self-taught programmer who loves diving into new things
         and figuring them out as I go. Right now, I’m learning Japanese and
         exploring cool areas like AI and blockchain. I’m all about building
@@ -131,7 +132,7 @@ export default function HomeEl() {
       </p>
       <p className=" text-xl font-bold mt-10 flex pb-2 pl-[400px]">Skills</p>
       <div className=" flex  h-72 ml-8 justify-center">
-        <div className=" rounded-md flex justify-between  pr-6 w-[770px] border border-zinc-800 ">
+        <div className=" rounded-md flex justify-between  pr-6 w-[770px] border dark:border-zinc-800 ">
           <div className="grid pl-5 grid-cols-3 pb-3 gap-3 mt-5">
             <TechStackBtn name="Typecript" icon=" bg-[#3498db]" />
             <TechStackBtn name="React" icon="bg-cyan-300" />
@@ -197,7 +198,7 @@ export default function HomeEl() {
           </div>
         </div>
       </div>
-      <p className="  border-t flex mt-4 ml-96 mr-[355px] border-neutral-700 pt-4 justify-center">
+      <p className="  border-t flex mt-4 ml-96 mr-[355px] dark:border-neutral-700 pt-4 justify-center">
         Made with ❤️ by Akshit
       </p>
       <div className="flex items-center justify-center h-24  w-full">
