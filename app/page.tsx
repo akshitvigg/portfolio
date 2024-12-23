@@ -1,5 +1,6 @@
 import { IconCloud } from "@/components/skillssphere";
 import Image from "next/image";
+import TechStackBtn from "@/components/skillschips";
 
 const slugs = [
   "flask",
@@ -34,8 +35,8 @@ const slugs = [
 
 export default function Home() {
   return (
-    <div>
-      <div className="mt-16  items-center flex  ">
+    <div className="min-h-screen bg-neutral-900 text-white">
+      <div className="pt-16  items-center flex  ">
         <div className="pr-7 ml-[270px]  ">
           <Image
             className="  rounded-full"
@@ -64,11 +65,32 @@ export default function Home() {
       </p>
       <p className=" text-xl font-bold mt-10 flex pb-2 pl-[270px]">Skills</p>
       <div className=" flex  h-72 ml-8 justify-center">
-        <div className=" rounded-md flex justify-end pr-6 w-[770px] border border-zinc-800 ">
-          <IconCloud iconSlugs={slugs} />
+        <div className=" rounded-md flex justify-between  pr-6 w-[770px] border border-zinc-800 ">
+          <div className="grid pl-5 grid-cols-3 pb-3 gap-3 mt-5">
+            <TechStackBtn name="Typecript" icon=" bg-[#3498db]" />
+            <TechStackBtn name="React" icon="bg-cyan-300" />
+            <TechStackBtn name="Next.js" icon="bg-white" />
+            <TechStackBtn name="MongoDB" icon="bg-green-600" />
+            <TechStackBtn name="PostgreSQL" icon="bg-blue-500" />
+            <TechStackBtn name="MySQL" icon="bg-blue-400" />
+            <TechStackBtn name="JavaScript" icon="bg-yellow-300" />
+            <TechStackBtn name="Flask" icon="bg-white" />
+            <TechStackBtn name="Python" icon="bg-green-400" />
+            <TechStackBtn name="Java" icon="bg-orange-500" />
+            <TechStackBtn name="C" icon=" bg-red-200" />
+            <TechStackBtn name="C++" icon="bg-red-400" />
+            <TechStackBtn name="Node.js" icon="bg-teal-600" />
+            <TechStackBtn name="Express.js" icon="bg-emerald-300" />
+            <TechStackBtn name="Tailwind" icon="bg-cyan-500" />
+            <TechStackBtn name="Git" icon="bg-orange-700" />
+          </div>
+
+          <div className="">
+            <IconCloud iconSlugs={slugs} />
+          </div>
         </div>
       </div>
-      dsds
+      <p className=" text-3xl mt-8 flex font-bold justify-center"> Projects</p>
     </div>
   );
 }
