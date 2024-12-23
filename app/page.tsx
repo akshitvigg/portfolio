@@ -1,6 +1,7 @@
 import { IconCloud } from "@/components/skillssphere";
 import Image from "next/image";
 import TechStackBtn from "@/components/skillschips";
+import { Card } from "@/components/projectsCard";
 
 const slugs = [
   "flask",
@@ -90,7 +91,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <p className=" text-3xl mt-8 flex font-bold justify-center"> Projects</p>
+      <div>
+        <p className=" text-3xl mt-8 flex font-bold justify-center">Projects</p>
+        <div className="pl-7 flex justify-center">
+          <div className=" pb-5 grid gap-3 grid-cols-2">
+            <Card src={"/anitaro.png"} />
+            <Card src={"/secondBrain.png"} />
+            <Card src={"/astroquest.png"} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
