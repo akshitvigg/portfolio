@@ -34,6 +34,8 @@ const slugs = [
   "jinja",
 ];
 
+const anitaroArr = ["Nextjs", "Typescript", "TailwindCSS", "NextUi"];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-neutral-900 text-white">
@@ -99,16 +101,19 @@ export default function Home() {
               src={"/anitaro.png"}
               projectTitle="アニタロ"
               description="A site where users can watch anime and read manga with a smooth and enjoyable experience. Built with a user-friendly interface for effortless content exploration."
+              toolsUsed={anitaroArr}
             />
             <Card
               src={"/secondBrain.png"}
               projectTitle="SecondBrain"
               description="A site to save and organize content like YouTube videos, tweets, documents and more. share your 'brain' with friends to explore your collection."
+              toolsUsed={anitaroArr}
             />
             <Card
               src={"/astroquest.png"}
               projectTitle="AstroQuest"
-              description="A site to watch anime and read manga all in one place.Simple and Seamless"
+              description="A fun web app that lets you explore the solar system with detailed planet info, smooth space animations, and a bot to help guide you on your cosmic journey"
+              toolsUsed={anitaroArr}
             />
           </div>
         </div>
