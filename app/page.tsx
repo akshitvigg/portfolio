@@ -103,8 +103,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
-      <div className="pt-16  items-center flex  ">
-        <div className="pr-7 ml-[400px]  ">
+      <div className="sm:pt-16  items-center flex  ">
+        <div className="sm:pr-7 pl-3 sm:pl-0 pr-5 sm:ml-[400px]  ">
           <Image
             className="  rounded-full"
             src={
@@ -120,8 +120,8 @@ export default function Home() {
           <p>Full Stack developer </p>
         </div>
       </div>
-      <p className="pl-[400px] pt-10  text-xl font-bold ">About</p>
-      <p className="pl-[400px]  w-[1150px] text-neutral-500 dark:text-neutral-400">
+      <p className="sm:pl-[400px] pt-10  text-xl font-bold ">About</p>
+      <p className="sm:pl-[400px]  sm:w-[1150px] text-neutral-500 dark:text-neutral-400">
         I’m Akshit, a self-taught programmer who loves diving into new things
         and figuring them out as I go. Right now, I’m learning Japanese and
         exploring cool areas like AI and blockchain. I’m all about building
@@ -130,10 +130,10 @@ export default function Home() {
         days, I’m focused on creating stuff that actually works and solving
         problems with technology.
       </p>
-      <p className=" text-xl font-bold mt-10 flex pb-2 pl-[400px]">Skills</p>
-      <div className=" flex  h-72 ml-8 justify-center">
+      <p className=" text-xl font-bold mt-10 flex pb-2 sm:pl-[400px]">Skills</p>
+      <div className=" flex  h-72 sm:ml-8 justify-center">
         <div className=" rounded-md flex justify-between  pr-6 w-[770px] border dark:border-zinc-800 ">
-          <div className="grid pl-5 grid-cols-3 pb-3 gap-3 mt-5">
+          <div className=" hidden sm:grid   pl-5 grid-cols-3 pb-3 gap-3 mt-5">
             <TechStackBtn name="Typecript" icon=" bg-[#3498db]" />
             <TechStackBtn name="React" icon="bg-cyan-300" />
             <TechStackBtn name="Next.js" icon="bg-white" />
@@ -152,7 +152,7 @@ export default function Home() {
             <TechStackBtn name="Git" icon="bg-orange-700" />
           </div>
 
-          <div className="">
+          <div className=" sm:ml-0 ml-16">
             <IconCloud iconSlugs={slugs} />
           </div>
         </div>
@@ -165,8 +165,8 @@ export default function Home() {
         <p className="text-xl pt-2 font-bold text-neutral-400 justify-center flex">
           I've worked on a variety of projects, here are some that I like.
         </p>
-        <div className="pl-7 pt-7 flex justify-center">
-          <div className=" pb-5 grid gap-3 grid-cols-2">
+        <div className="sm:pl-7 pt-7 flex justify-center">
+          <div className=" pb-5 grid gap-3 grid-cols-1 sm:grid-cols-2">
             <Card
               src={"/anitaro.png"}
               projectTitle="アニタロ"
@@ -198,10 +198,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <p className="  border-t flex mt-4 ml-96 mr-[355px] dark:border-neutral-700 pt-4 justify-center">
+      <p className="  border-t flex mt-4 sm:ml-96 sm:mr-[355px] dark:border-neutral-700 pt-4 justify-center">
         Made with ❤️ by Akshit
       </p>
-      <div className="flex items-center justify-center h-24  w-full">
+      <div className="flex items-center justify-center sm:h-24  w-full">
         <FloatingDock mobileClassName="translate-y-20" items={items} />
       </div>
     </div>
