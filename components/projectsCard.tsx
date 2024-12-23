@@ -14,7 +14,7 @@ export const Card = ({
   toolsUsed,
 }: CardProps) => {
   return (
-    <div className=" border  rounded-lg border-zinc-800 h-[355px] w-96">
+    <div className=" border  rounded-lg border-zinc-800 h-[365px] w-96">
       <Image
         className=" rounded-t-lg  "
         width={400}
@@ -33,8 +33,9 @@ export const Card = ({
           </div>
         ))}
       </div>
-      <button className=" ml-1 mt-2 bg-white text-black text-sm px-2">
-        Website
+      <button className=" hover:bg-zinc-300 active:scale-105 transition-all duration-200 rounded-md py-1 ml-2 mt-3 flex items-center bg-white text-black text-sm px-2">
+        <img src="/network.png" width={12} />
+        <p className="pl-2  ">Website</p>
       </button>
     </div>
   );
