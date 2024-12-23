@@ -119,11 +119,13 @@ function IconContainer({
   title,
   icon,
   href,
+  onClick,
 }: {
   mouseX: MotionValue;
   title: string;
   icon: React.ReactNode;
   href: string;
+  onClick?: () => void;
 }) {
   let ref = useRef<HTMLDivElement>(null);
 
@@ -170,6 +172,7 @@ function IconContainer({
   return (
     <Link href={href}>
       <motion.div
+        onClick={onClick}
         ref={ref}
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
