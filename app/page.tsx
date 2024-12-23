@@ -3,18 +3,14 @@ import Image from "next/image";
 import TechStackBtn from "@/components/skillschips";
 import { Card } from "@/components/projectsCard";
 import { FloatingDock } from "@/components/ui/floating-dock";
-import { Home, icons, Mail } from "lucide-react";
+
 import {
   IconBrandGithub,
   IconBrandGmail,
   IconBrandLinkedin,
   IconBrandX,
-  IconExchange,
   IconHome,
-  IconNewSection,
-  IconTerminal2,
 } from "@tabler/icons-react";
-import { title } from "process";
 
 const slugs = [
   "flask",
@@ -65,7 +61,7 @@ const items = [
     icon: (
       <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "mailto:akshitvig48@gmail.com",
   },
 
   {
@@ -73,21 +69,21 @@ const items = [
     icon: (
       <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://x.com/AkshitVig4",
   },
   {
     title: "GitHub",
     icon: (
       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://github.com/akshitvigg",
   },
   {
     title: "LinkedIn",
     icon: (
       <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://www.linkedin.com/in/akshit-vig-a56377303",
   },
 ];
 
