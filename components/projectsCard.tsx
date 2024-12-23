@@ -38,10 +38,12 @@ export const Card = ({
           </div>
         ))}
       </div>
-      <button className=" hover:bg-zinc-300 active:scale-105 transition-all duration-200 rounded-md py-1 ml-2 mt-3 flex items-center bg-white text-black text-sm px-2">
-        <img src="/network.png" width={12} />
-        <p className="pl-2  ">Website</p>
-      </button>
+      <Link href={projLink}>
+        <button className=" hover:bg-zinc-300 active:scale-105 transition-all duration-150 rounded-md py-1 ml-2 mt-3 flex items-center bg-white text-black text-sm px-2">
+          <img src="/network.png" width={12} />
+          <p className="pl-2  ">Website</p>
+        </button>
+      </Link>
     </div>
   );
 };

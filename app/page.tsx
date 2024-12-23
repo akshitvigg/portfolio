@@ -97,7 +97,13 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <p className=" text-3xl mt-8 flex font-bold justify-center">Projects</p>
+        <p className=" text-2xl mt-8 flex font-bold justify-center">Projects</p>
+        <p className=" tracking-wider pt-2 text-4xl font-bold justify-center flex ">
+          Check out my latest work
+        </p>
+        <p className="text-xl pt-2 font-bold text-neutral-400 justify-center flex">
+          I've worked on a variety of projects, here are some that I like.
+        </p>
         <div className="pl-7 pt-7 flex justify-center">
           <div className=" pb-5 grid gap-3 grid-cols-2">
             <Card
