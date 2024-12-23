@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-neutral-900 text-white">
       <div className="pt-16  items-center flex  ">
-        <div className="pr-7 ml-[270px]  ">
+        <div className="pr-7 ml-[400px]  ">
           <Image
             className="  rounded-full"
             src={
@@ -53,8 +53,8 @@ export default function Home() {
           <p>Full Stack developer </p>
         </div>
       </div>
-      <p className="pl-[270px] pt-10  text-xl font-bold ">About</p>
-      <p className="pl-[270px]  w-[1050px] text-neutral-400">
+      <p className="pl-[400px] pt-10  text-xl font-bold ">About</p>
+      <p className="pl-[400px]  w-[1150px] text-neutral-400">
         I’m Akshit, a self-taught programmer who loves diving into new things
         and figuring them out as I go. Right now, I’m learning Japanese and
         exploring cool areas like AI and blockchain. I’m all about building
@@ -63,7 +63,7 @@ export default function Home() {
         days, I’m focused on creating stuff that actually works and solving
         problems with technology.
       </p>
-      <p className=" text-xl font-bold mt-10 flex pb-2 pl-[270px]">Skills</p>
+      <p className=" text-xl font-bold mt-10 flex pb-2 pl-[400px]">Skills</p>
       <div className=" flex  h-72 ml-8 justify-center">
         <div className=" rounded-md flex justify-between  pr-6 w-[770px] border border-zinc-800 ">
           <div className="grid pl-5 grid-cols-3 pb-3 gap-3 mt-5">
