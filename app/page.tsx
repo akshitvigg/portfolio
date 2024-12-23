@@ -35,9 +35,9 @@ const slugs = [
 ];
 
 const anitaroArr = ["Next.js", "Typescript", "TailwindCSS", "NextUi"];
-const secBrainarr = ["React", "Typescript", "TailwindCSS"];
+const secBrainarr = ["React", "Typescript", "TailwindCSS", "MongoDB"];
 const astroquestarr = ["React", "Javascript"];
-const pawpalarr = ["React", "Javascript"];
+const pawpalarr = ["React", "Javascript", "MongoDB"];
 
 export default function Home() {
   return (
@@ -105,24 +105,28 @@ export default function Home() {
               projectTitle="アニタロ"
               description="A site where users can watch anime and read manga with a smooth and enjoyable experience. Built with a user-friendly interface for effortless content exploration."
               toolsUsed={anitaroArr}
+              projLink="https://anim-gules.vercel.app/"
             />
             <Card
               src={"/secondBrain.png"}
               projectTitle="SecondBrain"
               description="A site to save and organize content like YouTube videos, tweets, documents and more. share your 'brain' with friends to explore your collection."
               toolsUsed={secBrainarr}
+              projLink="https://secondbrainn.netlify.app/"
             />
             <Card
               src={"/astroquest.png"}
               projectTitle="AstroQuest"
               description="A fun web app that lets you explore the solar system with detailed planet info, smooth space animations, and a bot to help guide you on your cosmic journey"
               toolsUsed={astroquestarr}
+              projLink="https://astroquest.netlify.app/"
             />
             <Card
               src={"/pawpal.png"}
               projectTitle="PawPal"
               description="A simple pet adoption site where users can browse and adopt pets in need of a home. Features a user-friendly interface to explore available pets and their details."
               toolsUsed={pawpalarr}
+              projLink="https://paw-pal.netlify.app/"
             />
           </div>
         </div>
