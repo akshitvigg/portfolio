@@ -216,8 +216,11 @@ export default function Home() {
       <p className="  border-t flex mt-4 sm:ml-96 sm:mr-[355px] dark:border-neutral-700 pt-4 justify-center">
         Made with ❤️ by Akshit
       </p>
-      <div className="flex items-center justify-end sm:h-24  w-full">
-        <FloatingDock mobileClassName="" items={items} />
+      <div className="flex items-center  justify-end sm:h-24  w-full">
+        <FloatingDock
+          mobileClassName=" -translate-x-4 -translate-y-8"
+          items={items}
+        />
       </div>
     </div>
   );
