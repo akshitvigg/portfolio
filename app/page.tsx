@@ -99,7 +99,7 @@ export default function Home() {
         ) : (
           <IconSun className=" hidden sm:block  h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-      href: "#",
+
       onClick: toggleTheme,
     },
   ];
