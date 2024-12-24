@@ -14,6 +14,7 @@ import {
   IconSun,
 } from "@tabler/icons-react";
 import { useTheme } from "@/components/ui/theme-provider";
+import { Snippet } from "@nextui-org/snippet";
 
 const slugs = [
   "flask",
@@ -53,6 +54,7 @@ const pawpalarr = ["React", "Javascript", "MongoDB"];
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
+
   const items = [
     {
       title: "Home",
@@ -120,6 +122,7 @@ export default function Home() {
           <p className=" pt-2">
             I mess with code, break stuff, and make it better
           </p>
+          <Snippet>npx akshiro</Snippet>
         </div>
       </div>
       <p className="sm:pl-[400px] pt-10  text-xl font-bold ">About</p>
