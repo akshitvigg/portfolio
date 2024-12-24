@@ -118,11 +118,20 @@ export default function Home() {
           />
         </div>
         <div className="">
-          <p className="font-bold text-4xl">Hi I'm Akshit</p>
+          <p className="font-bold text-4xl">Hi, I'm Akshit</p>
           <p className=" pt-2">
             I mess with code, break stuff, and make it better
           </p>
-          <Snippet>npx akshiro</Snippet>
+          <Snippet
+            className=" mt-1"
+            tooltipProps={{
+              content: "Copy and run this on your terminal",
+              placement: "right",
+            }}
+            size="md"
+          >
+            npx akshiro
+          </Snippet>
         </div>
       </div>
       <p className="sm:pl-[400px] pt-10  text-xl font-bold ">About</p>
