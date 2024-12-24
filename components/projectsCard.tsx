@@ -17,7 +17,7 @@ export const Card = ({
   projLink,
 }: CardProps) => {
   return (
-    <div className=" border  rounded-lg dark:border-zinc-800 h-[365px] w-96">
+    <div className=" border  rounded-lg dark:border-zinc-800 h-[365px] w-80 sm:w-96">
       <Link href={projLink}>
         <Image
           className=" rounded-t-lg  "
