@@ -47,8 +47,9 @@ const slugs = [
   "jinja",
 ];
 
-const anitaroArr = ["Next.js", "Typescript", "TailwindCSS", "NextUi"];
+const anitaroArr = ["Next.js", "Typescript", "TailwindCSS", "NextUI"];
 const secBrainarr = ["React", "Typescript", "TailwindCSS", "MongoDB"];
+const chitchat = ["React", "Typescript", "WebSockets"];
 const astroquestarr = ["React", "Javascript"];
 const pawpalarr = ["React", "Javascript", "MongoDB"];
 
@@ -193,6 +194,13 @@ export default function Home() {
               description="A site to save and organize content like YouTube videos, tweets, documents and more. share your 'brain' with friends to explore your collection."
               toolsUsed={secBrainarr}
               projLink="https://secondbrainn.netlify.app/"
+            />
+            <Card
+              src={"/chitchat.png"}
+              projectTitle="ChitChat"
+              description="A real-time chat app with temporary rooms for seamless conversations. Its clean and simple UI ensures effortless communication and a smooth user experience"
+              toolsUsed={chitchat}
+              projLink="https://chitt-chatt.vercel.app/"
             />
             <Card
               src={"/astroquest.png"}
