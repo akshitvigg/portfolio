@@ -95,9 +95,9 @@ export default function Home() {
       title: "Theme",
       icon:
         theme === "light" ? (
-          <IconMoon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+          <IconMoon className=" hidden sm:block h-full w-full text-neutral-500 dark:text-neutral-300" />
         ) : (
-          <IconSun className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+          <IconSun className=" hidden sm:block  h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
       href: "#",
       onClick: toggleTheme,
