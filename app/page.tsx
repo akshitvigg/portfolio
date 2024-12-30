@@ -164,7 +164,7 @@ export default function Home() {
             <TechStackBtn name="C++" icon="bg-red-400" />
             <TechStackBtn name="Node.js" icon="bg-teal-600" />
             <TechStackBtn name="Express.js" icon="bg-emerald-300" />
-            <TechStackBtn name="Tailwind" icon="bg-cyan-500" />
+            <TechStackBtn name="TailwindCSS" icon="bg-cyan-500" />
             <TechStackBtn name="Git" icon="bg-orange-700" />
           </div>
 
