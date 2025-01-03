@@ -16,7 +16,6 @@ import {
 import { useTheme } from "@/components/ui/theme-provider";
 import { Snippet } from "@nextui-org/snippet";
 
-
 const slugs = [
   "flask",
   "tailwindcss",
