@@ -52,6 +52,7 @@ const secBrainarr = ["React", "Typescript", "TailwindCSS", "MongoDB"];
 const chitchat = ["React", "Typescript", "WebSockets"];
 const astroquestarr = ["React", "Javascript"];
 const pawpalarr = ["React", "Javascript", "MongoDB"];
+const bggonearr = ["Next.js", "Typescript", "TailwindCSS", "MagicUI"];
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
@@ -217,6 +218,13 @@ export default function Home() {
               description="A simple pet adoption site where users can browse and adopt pets in need of a home. Features a user-friendly interface to explore available pets and their details."
               toolsUsed={pawpalarr}
               projLink="https://paw-pal.netlify.app/"
+            />
+            <Card
+              src={"/bggone.png"}
+              projectTitle="BgGone"
+              description="A simple background removal tool that allows users to remove image backgrounds effortlessly. Features a clean and user-friendly interface for easy processing."
+              toolsUsed={bggonearr}
+              projLink="https://bg-gone-rose.vercel.app/"
             />
           </div>
         </div>
