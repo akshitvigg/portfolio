@@ -15,6 +15,7 @@ import {
 } from "@tabler/icons-react";
 import { useTheme } from "@/components/ui/theme-provider";
 import { Snippet } from "@nextui-org/snippet";
+import GithubContributions from "@/components/githubcontri";
 
 const slugs = [
   "flask",
@@ -172,6 +173,12 @@ export default function Home() {
           <div className=" sm:ml-0 ml-16">
             <IconCloud iconSlugs={slugs} />
           </div>
+        </div>
+      </div>
+
+      <div className="w-full mt-8 flex justify-center">
+        <div className="max-w-7xl overflow-hidden">
+          <GithubContributions />
         </div>
       </div>
       <div>
