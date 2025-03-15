@@ -74,7 +74,7 @@ export default function Home() {
       icon: (
         <IconNotebook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "/",
+      href: "/blogs",
     },
     {
       title: "Mail",
