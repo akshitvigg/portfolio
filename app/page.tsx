@@ -11,9 +11,7 @@ import {
   IconBrandX,
   IconHome,
   IconMoon,
-  IconNote,
   IconNotebook,
-  IconNotebookOff,
   IconSun,
 } from "@tabler/icons-react";
 import { useTheme } from "@/components/ui/theme-provider";
@@ -59,63 +57,6 @@ const pawpalarr = ["React", "Javascript", "MongoDB"];
 const bggonearr = ["Next.js", "Typescript", "TailwindCSS", "MagicUI"];
 
 export default function Home() {
-  const { theme, toggleTheme } = useTheme();
-
-  const items = [
-    {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "/",
-    },
-    {
-      title: "Blogs",
-      icon: (
-        <IconNotebook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "/blogs",
-    },
-    {
-      title: "Mail",
-      icon: (
-        <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "mailto:akshitvig48@gmail.com",
-    },
-
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "https://x.com/AkshitVig4",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "https://github.com/akshitvigg",
-    },
-    {
-      title: "LinkedIn",
-      icon: <IconBrandLinkedin />,
-      href: "https://www.linkedin.com/in/akshit-vig-a56377303",
-    },
-    {
-      title: "Theme",
-      icon:
-        theme === "light" ? (
-          <IconMoon className=" hidden sm:block h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ) : (
-          <IconSun className=" hidden sm:block  h-full w-full text-neutral-500 dark:text-neutral-300" />
-        ),
-
-      onClick: toggleTheme,
-    },
-  ];
-
   return (
     <div className=" min-h-screen font-sans bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
       <div className="sm:pt-16  items-center flex  ">
@@ -249,12 +190,6 @@ export default function Home() {
       <p className="  border-t flex mt-4 sm:ml-96 sm:mr-[355px] dark:border-neutral-700 pt-4 justify-center">
         Made with ❤️ by Akshit
       </p>
-      <div className="flex items-center  justify-end sm:h-24  w-full">
-        <FloatingDock
-          mobileClassName=" -translate-x-4 -translate-y-8"
-          items={items}
-        />
-      </div>
     </div>
   );
 }
