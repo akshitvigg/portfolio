@@ -11,6 +11,9 @@ import {
   IconBrandX,
   IconHome,
   IconMoon,
+  IconNote,
+  IconNotebook,
+  IconNotebookOff,
   IconSun,
 } from "@tabler/icons-react";
 import { useTheme } from "@/components/ui/theme-provider";
@@ -69,7 +72,7 @@ export default function Home() {
     {
       title: "Blogs",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconNotebook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "/",
     },
