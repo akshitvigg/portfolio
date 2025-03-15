@@ -1,5 +1,5 @@
-const Blogs = () => f{
-  return <div>asfaaff</div>;
+const Blogs = () => {
+  return <div>asdsdsaff</div>;
 };
 
 export default Blogs;
