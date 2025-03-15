@@ -67,6 +67,13 @@ export default function Home() {
       href: "/",
     },
     {
+      title: "Blogs",
+      icon: (
+        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "/",
+    },
+    {
       title: "Mail",
       icon: (
         <IconBrandGmail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
