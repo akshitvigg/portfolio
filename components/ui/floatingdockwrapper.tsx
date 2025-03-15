@@ -71,7 +71,7 @@ const FloatingDockWrapper = () => {
   ];
 
   return (
-    <div className="flex items-center  justify-end sm:h-24  w-full">
+    <div className="flex items-center  bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white justify-end sm:h-24  w-full">
       <FloatingDock
         mobileClassName=" -translate-x-4 -translate-y-8"
         items={items}
