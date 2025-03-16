@@ -10,9 +10,9 @@ const GithubContributions = () => {
         colorScheme="dark"
         fontSize={12}
         blockSize={10.7}
-        // theme={{
-        //   dark: ["#262626", "#3a3a3a", "#505050", "#6b7280", "#94a3b8"],
-        // }}
+        theme={{
+          dark: ["#262626", "#0d6272", "#128aa0", "#18b1ce", "#31cbe7"],
+        }}
       />
     </div>
   );
