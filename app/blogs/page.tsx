@@ -7,14 +7,16 @@ const Blogs = () => {
         <p className=" font-bold mt-20 text-5xl">My Blogs</p>
         <Link
           href={
-            "https://sand-nutria-26f.notion.site/My-first-blog-1b7fb8c0cfbd804cb9f9c601b3185639"
+            "https://sand-nutria-26f.notion.site/Creating-a-Token-on-Solana-1b8fb8c0cfbd80bfa831e8b799b0e2e6"
           }
         >
           <div className="cursor-pointer ">
-            <p className=" hover:underline  mt-14 text-3xl">first blog</p>
+            <p className=" hover:underline  mt-14 text-3xl">
+              How to create a token on Solana
+            </p>
             <p className="  mt-3 text-lg text-neutral-400">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-              delectus voluptate
+              Learn how to create, mint, and manage your own token on Solana
+              from scratch.
             </p>
           </div>
         </Link>
