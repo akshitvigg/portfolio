@@ -185,6 +185,13 @@ export default function Home() {
               toolsUsed={bggonearr}
               projLink="https://bg-gone-rose.vercel.app/"
             />
+            <Card
+              src={"/bggone.png"}
+              projectTitle="BgGone"
+              description="A simple background removal tool that allows users to remove image backgrounds effortlessly.Features a clean and user-friendly interface for easy processing."
+              toolsUsed={bggonearr}
+              projLink="https://bg-gone-rose.vercel.app/"
+            />
           </div>
         </div>
       </div>
