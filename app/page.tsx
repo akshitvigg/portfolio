@@ -55,6 +55,7 @@ const chitchat = ["React", "Typescript", "WebSockets"];
 const astroquestarr = ["React", "Javascript"];
 const pawpalarr = ["React", "Javascript", "MongoDB"];
 const bggonearr = ["Next.js", "Typescript", "TailwindCSS", "MagicUI"];
+const solwallarr = ["React", "Typescript", "TailwindCSS", "ShadcnUI"];
 
 export default function Home() {
   return (
