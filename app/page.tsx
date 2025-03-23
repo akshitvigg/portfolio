@@ -148,7 +148,7 @@ export default function Home() {
               projectTitle="アニタロ"
               description="A site where users can watch anime and read manga with a smooth and enjoyable experience. Built with a user-friendly interface for effortless content exploration."
               toolsUsed={anitaroArr}
-              projLink="https://anim-gules.vercel.app/"
+              projLink="https://anitaro.akshitt.me/"
             />
             <Card
               src={"/secbrain.png"}
