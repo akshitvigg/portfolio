@@ -20,7 +20,7 @@ const Blogs = () => {
               Learn how to create, mint, and manage your own token on Solana
               from scratch.
             </p>
-            <p className=" text-sm">Mar 17, 2025</p>
+            <p className=" text-xs">Mar 17, 2025</p>
           </div>
         </Link>
       </div>
