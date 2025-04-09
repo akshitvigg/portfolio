@@ -56,6 +56,7 @@ const astroquestarr = ["React", "Javascript"];
 const pawpalarr = ["React", "Javascript", "MongoDB"];
 const bggonearr = ["Next.js", "Typescript", "TailwindCSS", "MagicUI"];
 const solwallarr = ["React", "Typescript", "TailwindCSS", "ShadcnUI"];
+const ensoarr = ["Next.js", "Typescript", "TailwindCSS", "WebSocket"];
 
 export default function Home() {
   return (
