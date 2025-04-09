@@ -152,6 +152,13 @@ export default function Home() {
               projLink="https://anitaro.akshitt.me/"
             />
             <Card
+              src={"/enso.png"}
+              projectTitle="Enso"
+              description="A collaborative whiteboard app for seamless real-time drawing and brainstorming. Designed with simplicity and teamwork in mind."
+              toolsUsed={ensoarr}
+              projLink="https://enso.akshitt.me/"
+            />
+            <Card
               src={"/secbrain.png"}
               projectTitle="SecondBrain"
               description="A site to save and organize content like YouTube videos, tweets, documents and more. share your 'brain' with friends to explore your collection."
