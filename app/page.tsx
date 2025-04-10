@@ -152,7 +152,7 @@ export default function Home() {
               projLink="https://anitaro.akshitt.me/"
             />
             <Card
-              src={"/enso.jpg"}
+              src={"/enso.png"}
               projectTitle="Enso"
               description="A collaborative whiteboard app for seamless real-time drawing and brainstorming. Designed with simplicity and teamwork in mind."
               toolsUsed={ensoarr}
