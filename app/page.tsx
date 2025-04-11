@@ -3,18 +3,6 @@ import { IconCloud } from "@/components/skillssphere";
 import Image from "next/image";
 import TechStackBtn from "@/components/skillschips";
 import { Card } from "@/components/projectsCard";
-import { FloatingDock } from "@/components/ui/floating-dock";
-import {
-  IconBrandGithub,
-  IconBrandGmail,
-  IconBrandLinkedin,
-  IconBrandX,
-  IconHome,
-  IconMoon,
-  IconNotebook,
-  IconSun,
-} from "@tabler/icons-react";
-import { useTheme } from "@/components/ui/theme-provider";
 import { Snippet } from "@nextui-org/snippet";
 import GithubContributions from "@/components/githubcontri";
 
