@@ -65,9 +65,7 @@ export default function Home() {
         <div className="sm:pr-7 pl-3 sm:pl-0 pr-5 sm:ml-[400px]  ">
           <Image
             className=" mb-10 sm:mb-0  rounded-full"
-            src={
-              "https://i.pinimg.com/736x/aa/c8/02/aac8024b2258aad7262895c4b0bccd79.jpg"
-            }
+            src={"/cheng.jpg"}
             alt="pfp"
             width={100}
             height={300}
@@ -198,7 +196,7 @@ export default function Home() {
               projectTitle="Solana Wallet"
               description="Simple wallet adapter for seamless crypto transactions, featuring secure authentication and a user-friendly interface."
               toolsUsed={solwallarr}
-              projLink="https://solana-wallet-adapter.netlify.app/"
+              projLink="https://solana-wallet-adapterr.netlify.app/"
             />
           </div>
         </div>
