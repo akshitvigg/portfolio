@@ -185,7 +185,7 @@ export default function Home() {
               <Card
                 src={"/sol.jpg"}
                 projectTitle="Solana Wallet"
-                description="Simple wallet adapter for seamless crypto transactions, featuring secure authentication and a user-friendly interface."
+                description="Simple wallet adapter for seamless crypto transactions, offering secure authentication, smooth integration, and a user-friendly interface"
                 toolsUsed={solwallarr}
                 projLink="https://solana-wallet-adapterr.netlify.app/"
               />
