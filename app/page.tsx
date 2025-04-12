@@ -86,7 +86,7 @@ export default function Home() {
           and I love figuring out how they work.When I’m not coding, you’ll
           probably find me reading or messing around with my Japanese studies.
         </p>
-        <p className=" text-xl pl-3 font-bold mt-10 flex pb-2 sm:pl-[400px]">
+        <p className=" text-xl pl-3 font-bold mt-10 flex pb-2 sm:ml-[70px] ">
           Skills
         </p>
         <div className=" flex  h-72 sm:ml-8 justify-center">
