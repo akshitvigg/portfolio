@@ -183,7 +183,7 @@ export default function Home() {
                 projLink="https://bg-gone-rose.vercel.app/"
               />
               <Card
-                src={"/sol.png"}
+                src={"/sol.jpg"}
                 projectTitle="Solana Wallet"
                 description="Simple wallet adapter for seamless crypto transactions, featuring secure authentication and a user-friendly interface."
                 toolsUsed={solwallarr}
