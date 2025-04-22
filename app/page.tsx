@@ -49,7 +49,7 @@ const ensoarr = ["Next.js", "Typescript", "TailwindCSS", "WebSocket"];
 export default function Home() {
   return (
     <div className="  flex justify-center font-sans bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
-      <div className=" w-[370px] sm:w-[900px] min-h-screen ">
+      <div className=" w-[370px]  sm:w-[900px] min-h-screen ">
         <div className="sm:pt-16 sm:pl-[84px]  items-center flex  ">
           <div className="sm:pr-7 pl-3 sm:pl-0 pr-5  ">
             <Image
