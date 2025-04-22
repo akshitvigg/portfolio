@@ -2,12 +2,10 @@
 
 import GitHubCalendar from "react-github-calendar";
 import { useTheme } from "./ui/theme-provider";
-import { list } from "postcss";
 
 const GithubContributions = () => {
   const { theme } = useTheme();
 
-  const customTheme = {};
   return (
     <div className="ml-3 mr-3 sm:mr-0 sm:ml-8">
       <GitHubCalendar
