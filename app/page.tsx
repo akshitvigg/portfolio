@@ -54,7 +54,7 @@ export default function Home() {
           <div className="sm:pr-7 pl-3 sm:pl-0 pr-5  ">
             <Image
               className=" mb-10 sm:mb-0  rounded-full"
-              src={"/cheng.jpg"}
+              src={"/cheng1.jpg"}
               alt="pfp"
               width={100}
               height={300}
