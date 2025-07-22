@@ -7,6 +7,7 @@ import { Snippet } from "@nextui-org/snippet";
 import GithubContributions from "@/components/githubcontri";
 
 const slugs = [
+  "rust",
   "flask",
   "tailwindcss",
   "mysql",
