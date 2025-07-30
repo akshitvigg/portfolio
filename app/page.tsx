@@ -84,7 +84,7 @@ export default function Home() {
           breaking them down, and making them better. I’ve always had an
           interest in art, but I’m more focused on creating stuff that actually
           works and solving problems with technology. Robots catch my attention,
-          and I love figuring out how they work.When I’m not coding, you’ll
+          and I love figuring out how they work. When I’m not coding, you’ll
           probably find me reading or messing around with my Japanese studies.
         </p>
         <p className=" text-xl pl-3 font-bold mt-10 flex pb-2 sm:ml-[70px] ">
