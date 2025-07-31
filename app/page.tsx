@@ -111,6 +111,7 @@ export default function Home() {
               <TechStackBtn name="Express.js" icon="bg-emerald-300" />
               <TechStackBtn name="TailwindCSS" icon="bg-cyan-500" />
               <TechStackBtn name="Git" icon="bg-orange-700" />
+              <TechStackBtn name="Solidity" icon="bg-[#2b247c]" />
             </div>
 
             <div className=" sm:ml-0 ml-16">
