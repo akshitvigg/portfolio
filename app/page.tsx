@@ -8,6 +8,7 @@ import GithubContributions from "@/components/githubcontri";
 
 const slugs = [
   "rust",
+  "solidity",
   "flask",
   "tailwindcss",
   "mysql",
