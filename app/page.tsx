@@ -36,7 +36,6 @@ const slugs = [
   "visualstudiocode",
   "figma",
   "postman",
-  "jinja",
 ];
 
 const anitaroArr = ["Next.js", "Typescript", "TailwindCSS", "NextUI"];
