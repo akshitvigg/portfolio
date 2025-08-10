@@ -25,6 +25,24 @@ const Blogs = () => {
             </p>
           </div>
         </Link>
+        <Link
+          href={
+            "https://medium.com/@akshitvig48/pda-cpi-bumps-made-simple-0c5aaa273896"
+          }
+        >
+          <div className="cursor-pointer ">
+            <p className=" hover:underline ml-3 sm:ml-0  mt-14 text-2xl sm:text-3xl">
+              PDA, CPI & Bumps — Made Simple
+            </p>
+            <p className="  mt-3 text-md sm:text-lg ml-3 sm:ml-0 text-neutral-400">
+              Understand PDA, CPI, and bumps in Solana — explained simply from
+              scratch
+            </p>
+            <p className=" text-neutral-400 ml-3 sm:ml-0 text-xs">
+              Aug 10, 2025
+            </p>
+          </div>
+        </Link>
       </div>
     </div>
   );
