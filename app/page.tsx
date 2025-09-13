@@ -5,6 +5,7 @@ import TechStackBtn from "@/components/skillschips";
 import { Card } from "@/components/projectsCard";
 import { Snippet } from "@nextui-org/snippet";
 import GithubContributions from "@/components/githubcontri";
+import Link from "next/link";
 
 const slugs = [
   "rust",
@@ -42,10 +43,11 @@ const anitaroArr = ["Next.js", "Typescript", "TailwindCSS", "NextUI"];
 const secBrainarr = ["React", "Typescript", "TailwindCSS", "MongoDB"];
 const chitchat = ["React", "Typescript", "WebSockets"];
 const astroquestarr = ["React", "Javascript"];
-const pawpalarr = ["React", "Javascript", "MongoDB"];
+//const pawpalarr = ["React", "Javascript", "MongoDB"];
 const bggonearr = ["Next.js", "Typescript", "TailwindCSS", "MagicUI"];
 const solwallarr = ["React", "Typescript", "TailwindCSS", "ShadcnUI"];
 const ensoarr = ["Next.js", "Typescript", "TailwindCSS", "WebSocket"];
+const keyzenarr = ["Rust", "Tui"];
 
 export default function Home() {
   return (
@@ -165,20 +167,6 @@ export default function Home() {
                 projLink="https://chitt-chatt.vercel.app/"
               />
               <Card
-                src={"/astroquest.png"}
-                projectTitle="AstroQuest"
-                description="A fun web app that lets you explore the solar system with detailed planet info, smooth space animations, and a bot to help guide you on your cosmic journey"
-                toolsUsed={astroquestarr}
-                projLink="https://astroquest.netlify.app/"
-              />
-              <Card
-                src={"/pawpal.png"}
-                projectTitle="PawPal"
-                description="A simple pet adoption site where users can browse and adopt pets in need of a home. Features a user-friendly interface to explore available pets and their details."
-                toolsUsed={pawpalarr}
-                projLink="https://paw-pal.netlify.app/"
-              />
-              <Card
                 src={"/bggone.png"}
                 projectTitle="BgGone"
                 description="A simple background removal tool that allows users to remove image backgrounds effortlessly.Features a clean and user-friendly interface for easy processing."
@@ -192,6 +180,23 @@ export default function Home() {
                 toolsUsed={solwallarr}
                 projLink="https://sol-wallet-adapter.netlify.app/"
               />
+              <Card
+                src={"/keyzen.gif"}
+                projectTitle="Keyzen"
+                description="A typing test that runs in your terminal. Supports 35+ languages with real-time WPM and accuracy tracking for a minimal, focused experience."
+                toolsUsed={keyzenarr}
+                projLink="https://github.com/akshitvigg/keyzen"
+              />
+
+              <Card
+                src={"/astroquest.png"}
+                projectTitle="AstroQuest"
+                description="A fun web app that lets you explore the solar system with detailed planet info, smooth space animations, and a bot to help guide you on your cosmic journey"
+                toolsUsed={astroquestarr}
+                projLink="https://astroquest.netlify.app/"
+              />
+
+              <p className="text-neutral-500  dark:text-neutral-400"> checkout all of them <Link href={'/projects'}> <span className=" cursor-pointer underline text-neutral-600 hover:text-black dark:text-neutral-300 dark:hover:text-white">here</span></Link></p>
             </div>
           </div>
         </div>
