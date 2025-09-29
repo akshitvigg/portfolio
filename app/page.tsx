@@ -6,6 +6,12 @@ import { Card } from "@/components/projectsCard";
 import { Snippet } from "@nextui-org/snippet";
 import GithubContributions from "@/components/githubcontri";
 import Link from "next/link";
+import { useState } from "react";
+import en from "../components/locales/en.json"
+import jp from "../components/locales/jp.json"
+
+
+
 
 const slugs = [
   "rust",
@@ -49,7 +55,13 @@ const solwallarr = ["React", "Typescript", "TailwindCSS", "ShadcnUI"];
 const ensoarr = ["Next.js", "Typescript", "TailwindCSS", "WebSocket"];
 const keyzenarr = ["Rust", "Tui"];
 
+
+const translations = { en, jp }
+
+
 export default function Home() {
+  const [lang, setLang] = useState<"en" | "jp">("en")
+
   return (
     <div className="  flex justify-center font-sans bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
       <div className=" w-[370px]  sm:w-[900px] min-h-screen ">
@@ -64,10 +76,15 @@ export default function Home() {
             />
           </div>
           <div className="">
-            <p className="font-bold pt-4 sm:pt-0 text-4xl">Hi, I'm Akshit</p>
-            <p className=" pt-2 pr-2 sm:pr-0">
-              I mess with code, break stuff, and make it better
-            </p>
+            <div className="justify-between flex">
+              <p className="font-bold pt-4 sm:pt-0 text-4xl">{translations[lang].greeting}</p>
+            </div>
+
+            <div className=" pt-2 pr-2 flex  sm:pr-0">
+              <p>{translations[lang].tagline}</p>
+              <button className="translate-x-[616px] -translate-y-12 fixed hover:bg-neutral-400 cursor-pointer active:scale-95" onClick={() => { setLang(lang === "en" ? "jp" : "en") }}>{lang === "en" ? "JP" : "EN"}</button>
+
+            </div>
             <Snippet
               className=" collapse sm:visible mt-1"
               tooltipProps={{
@@ -80,17 +97,12 @@ export default function Home() {
             </Snippet>
           </div>
         </div>
-        <p className="pl-3 sm:pt-10 sm:ml-[70px]  text-xl font-bold ">About</p>
+        <p className="pl-3 sm:pt-10 sm:ml-[70px]  text-xl font-bold ">{translations[lang].aboutTitle}</p>
         <p className=" pl-3 pr-3 sm:ml-[70px] sm:pr-0 sm:w-[780px] text-justify text-neutral-500 dark:text-neutral-400">
-          I’m a 20-year-old CS student. I’m all about building things with code,
-          breaking them down, and making them better. I’ve always had an
-          interest in art, but I’m more focused on creating stuff that actually
-          works and solving problems with technology. Robots catch my attention,
-          and I love figuring out how they work. When I’m not coding, you’ll
-          probably find me reading or messing around with my Japanese studies.
+          {translations[lang].aboutText}
         </p>
         <p className=" text-xl pl-3 font-bold mt-10 flex pb-2 sm:ml-[70px] ">
-          Skills
+          {translations[lang].skills}
         </p>
         <div className=" flex  h-72 sm:ml-8 justify-center">
           <div className=" rounded-md flex justify-between sm:ml-0 sm:mr-0 ml-3 mr-3  pr-6 w-[770px] border dark:border-zinc-800 ">
@@ -128,62 +140,62 @@ export default function Home() {
         </div>
         <div>
           <p className=" text-2xl mt-8 flex font-bold justify-center">
-            Projects
+            {translations[lang].project}
           </p>
           <p className=" tracking-wider pt-2 text-2xl sm:text-4xl font-bold justify-center flex ">
-            Check out my latest work
+            {translations[lang].checkwork}
           </p>
           <p className="sm:text-xl text-lg sm:pl-0 sm:pr-0 pl-3 pr-3 pt-2 font-bold text-neutral-400 justify-center flex">
-            I've worked on a variety of projects, here are some that I like.
+            {translations[lang].workedOn}
           </p>
           <div className="sm:pl-7 pt-7  flex justify-center">
             <div className=" pb-5  dark:border-neutral-700  border-b-1 grid gap-3 grid-cols-1 sm:grid-cols-2">
               <Card
                 src={"/anitaro.png"}
                 projectTitle="アニタロ"
-                description="A site where users can watch anime and read manga with a smooth and enjoyable experience. Built with a user-friendly interface for effortless content exploration."
+                description={translations[lang].anitaroDesc}
                 toolsUsed={anitaroArr}
                 projLink="https://anitaro.akshitt.me/"
               />
               <Card
                 src={"/enso.png"}
                 projectTitle="Enso"
-                description="A collaborative whiteboard app for seamless real-time drawing and brainstorming. Designed with simplicity and teamwork in mind."
+                description={translations[lang].ensoDesc}
                 toolsUsed={ensoarr}
                 projLink="https://enso.akshitt.me/"
               />
               <Card
                 src={"/secbrain.png"}
                 projectTitle="SecondBrain"
-                description="A site to save and organize content like YouTube videos, tweets, documents and more. share your 'brain' with friends to explore your collection."
+                description={translations[lang].secondbrainDesc}
                 toolsUsed={secBrainarr}
                 projLink="https://secondbrainn.netlify.app/"
               />
               <Card
                 src={"/chitchat.png"}
                 projectTitle="ChitChat"
-                description="A real-time chat app with temporary rooms for seamless conversations. Its clean and simple UI ensures effortless communication and a smooth user experience"
+                description={translations[lang].chitchatDesc}
                 toolsUsed={chitchat}
                 projLink="https://chitt-chatt.vercel.app/"
               />
               <Card
                 src={"/bggone.png"}
                 projectTitle="BgGone"
-                description="A simple background removal tool that allows users to remove image backgrounds effortlessly.Features a clean and user-friendly interface for easy processing."
+                description={translations[lang].bggoneDesc}
                 toolsUsed={bggonearr}
                 projLink="https://bg-gone-rose.vercel.app/"
               />
               <Card
                 src={"/sol.jpg"}
                 projectTitle="Solana Wallet"
-                description="Simple wallet adapter for seamless crypto transactions, offering secure authentication, smooth integration, and a user-friendly interface"
+                description={translations[lang].solanaDesc}
                 toolsUsed={solwallarr}
                 projLink="https://sol-wallet-adapter.netlify.app/"
               />
               <Card
                 src={"/keyzen.gif"}
                 projectTitle="Keyzen"
-                description="A typing test that runs in your terminal. Supports 35+ languages with real-time WPM and accuracy tracking for a minimal, focused experience."
+                description={translations[lang].keyzenDesc}
                 toolsUsed={keyzenarr}
                 projLink="https://github.com/akshitvigg/keyzen"
               />
@@ -191,19 +203,30 @@ export default function Home() {
               <Card
                 src={"/astroquest.png"}
                 projectTitle="AstroQuest"
-                description="A fun web app that lets you explore the solar system with detailed planet info, smooth space animations, and a bot to help guide you on your cosmic journey"
+                description={translations[lang].astroDesc}
                 toolsUsed={astroquestarr}
                 projLink="https://astroquest.netlify.app/"
               />
 
-              <p className="text-neutral-500  dark:text-neutral-400"> checkout all of them <Link href={'/projects'}> <span className=" cursor-pointer underline text-neutral-600 hover:text-black dark:text-neutral-300 dark:hover:text-white">here</span></Link></p>
+              <p className="text-neutral-500  dark:text-neutral-400">
+                {lang === "en" ? <>checkout all of them{" "}
+                  <Link href="/projects">
+                    <span className="cursor-pointer underline text-neutral-600 hover:text-black dark:text-neutral-300 dark:hover:text-white">here</span>
+                  </Link>
+                </> : <>全てのプロジェクトは{" "}
+                  <Link href="/projects">
+                    <span className="cursor-pointer underline text-neutral-600 hover:text-black dark:text-neutral-300 dark:hover:text-white">こちら</span>
+                  </Link>
+                  からご覧いただけます
+                </>}
+              </p>
             </div>
           </div>
         </div>
         <p className="flex dark:border-neutral-700 pt-4 justify-center">
-          Made with ❤️ by Akshit
+          {translations[lang].footer}
         </p>
       </div>
-    </div>
+    </div >
   );
 }
