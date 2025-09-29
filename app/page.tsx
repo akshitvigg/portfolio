@@ -49,13 +49,13 @@ const slugs = [
 const anitaroArr = ["Next.js", "Typescript", "TailwindCSS", "NextUI"];
 const secBrainarr = ["React", "Typescript", "TailwindCSS", "MongoDB"];
 const chitchat = ["React", "Typescript", "WebSockets"];
-const astroquestarr = ["React", "Javascript"];
+// const astroquestarr = ["React", "Javascript"];
 //const pawpalarr = ["React", "Javascript", "MongoDB"];
 const bggonearr = ["Next.js", "Typescript", "TailwindCSS", "MagicUI"];
 const solwallarr = ["React", "Typescript", "TailwindCSS", "ShadcnUI"];
 const ensoarr = ["Next.js", "Typescript", "TailwindCSS", "WebSocket"];
 const keyzenarr = ["Rust", "Tui"];
-
+const gupshupai = ["Next.js", "Typescript", "TailwindCSS"]
 
 const translations = { en, jp }
 
@@ -83,9 +83,20 @@ export default function Home() {
 
             <div className=" pt-2 pr-2 flex  sm:pr-0">
               <p>{translations[lang].tagline}</p>
-              <button className="translate-x-[616px] -translate-y-12 fixed hover:bg-neutral-400 cursor-pointer active:scale-95" onClick={toggleLang}>{lang === "en" ? "JP" : "EN"}</button>
 
-            </div>
+
+
+
+
+              <button
+                onClick={toggleLang}
+                className="fixed top-4 right-4 sm:absolute sm:translate-x-[590px] sm:-translate-y-12 sm:top-auto sm:right-auto w-12 h-8 border border-neutral-300 dark:border-neutral-700 rounded overflow-hidden bg-white dark:bg-neutral-900 z-50"
+              >
+                <div className={`flex flex-col items-center transition-transform duration-500 ease-out ${lang === "en" ? "translate-y-0" : "-translate-y-8"}`}>
+                  <span className="h-8 flex items-center justify-center text-sm font-bold w-full">EN</span>
+                  <span className="h-8 flex items-center justify-center text-sm font-bold w-full">JP</span>
+                </div>
+              </button>           </div>
             <Snippet
               className=" collapse sm:visible mt-1"
               tooltipProps={{
@@ -173,12 +184,21 @@ export default function Home() {
                 projLink="https://secondbrainn.netlify.app/"
               />
               <Card
-                src={"/chitchat.png"}
-                projectTitle="ChitChat"
-                description={translations[lang].chitchatDesc}
-                toolsUsed={chitchat}
-                projLink="https://chitt-chatt.vercel.app/"
+                src={"/gupshup.jpg"}
+                projectTitle="GupShupAI"
+                description={translations[lang].gupshupai}
+                toolsUsed={gupshupai}
+                projLink="https://gupshup-ai.vercel.app/"
               />
+              <Card
+                src={"/keyzen.gif"}
+                projectTitle="Keyzen"
+                description={translations[lang].keyzenDesc}
+                toolsUsed={keyzenarr}
+                projLink="https://github.com/akshitvigg/keyzen"
+              />
+
+
               <Card
                 src={"/bggone.png"}
                 projectTitle="BgGone"
@@ -194,21 +214,22 @@ export default function Home() {
                 projLink="https://sol-wallet-adapter.netlify.app/"
               />
               <Card
-                src={"/keyzen.gif"}
-                projectTitle="Keyzen"
-                description={translations[lang].keyzenDesc}
-                toolsUsed={keyzenarr}
-                projLink="https://github.com/akshitvigg/keyzen"
+                src={"/chitchat.png"}
+                projectTitle="ChitChat"
+                description={translations[lang].chitchatDesc}
+                toolsUsed={chitchat}
+                projLink="https://chitt-chatt.vercel.app/"
               />
 
-              <Card
-                src={"/astroquest.png"}
-                projectTitle="AstroQuest"
-                description={translations[lang].astroDesc}
-                toolsUsed={astroquestarr}
-                projLink="https://astroquest.netlify.app/"
-              />
-
+              {/**/}
+              {/* <Card */}
+              {/*   src={"/astroquest.png"} */}
+              {/*   projectTitle="AstroQuest" */}
+              {/*   description={translations[lang].astroDesc} */}
+              {/*   toolsUsed={astroquestarr} */}
+              {/*   projLink="https://astroquest.netlify.app/" */}
+              {/* /> */}
+              {/**/}
               <p className="text-neutral-500  dark:text-neutral-400">
                 {lang === "en" ? <>checkout all of them{" "}
                   <Link href="/projects">
