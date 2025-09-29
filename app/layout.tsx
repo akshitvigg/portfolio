@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
 import { NextUIProvider } from "@nextui-org/system";
 import FloatingDockWrapper from "@/components/ui/floatingdockwrapper";
+import { LanguageProvider } from "@/components/LanguageContext";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,10 +35,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextUIProvider>
-          <ThemeProvider>
-            {children}
-            <FloatingDockWrapper />
-          </ThemeProvider>
+          <LanguageProvider>
+            <ThemeProvider>
+              {children}
+              <FloatingDockWrapper />
+            </ThemeProvider>
+          </LanguageProvider>
         </NextUIProvider>
         <Analytics />
       </body>

@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useState } from "react";
 import en from "../components/locales/en.json"
 import jp from "../components/locales/jp.json"
+import { useLanguage } from "@/components/LanguageContext";
 
 
 
@@ -60,7 +61,7 @@ const translations = { en, jp }
 
 
 export default function Home() {
-  const [lang, setLang] = useState<"en" | "jp">("en")
+  const { lang, setLang } = useLanguage()
 
   return (
     <div className="  flex justify-center font-sans bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
