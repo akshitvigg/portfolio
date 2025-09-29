@@ -61,7 +61,7 @@ const translations = { en, jp }
 
 
 export default function Home() {
-  const { lang, setLang } = useLanguage()
+  const { lang, toggleLang } = useLanguage()
 
   return (
     <div className="  flex justify-center font-sans bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
@@ -83,7 +83,7 @@ export default function Home() {
 
             <div className=" pt-2 pr-2 flex  sm:pr-0">
               <p>{translations[lang].tagline}</p>
-              <button className="translate-x-[616px] -translate-y-12 fixed hover:bg-neutral-400 cursor-pointer active:scale-95" onClick={() => { setLang(lang === "en" ? "jp" : "en") }}>{lang === "en" ? "JP" : "EN"}</button>
+              <button className="translate-x-[616px] -translate-y-12 fixed hover:bg-neutral-400 cursor-pointer active:scale-95" onClick={toggleLang}>{lang === "en" ? "JP" : "EN"}</button>
 
             </div>
             <Snippet

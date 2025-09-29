@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from "./LanguageContext";
 
 interface CardProps {
   src: string;
@@ -16,6 +17,7 @@ export const Card = ({
   toolsUsed,
   projLink,
 }: CardProps) => {
+  const { lang } = useLanguage()
   return (
     <div className=" border  rounded-lg dark:border-zinc-800 h-[365px] w-80 sm:w-96">
       <Link href={projLink}>
@@ -43,7 +45,7 @@ export const Card = ({
       <Link href={projLink}>
         <button className=" dark:hover:bg-zinc-300 hover:bg-zinc-300 active:scale-105 transition-all duration-150 rounded-md py-1 ml-2 mt-3 flex border-neutral-300 border items-center dark:bg-white dark:text-black text-sm px-2">
           <img src="/network.png" width={12} />
-          <p className="pl-2  ">Website</p>
+          <p className="pl-2  ">{lang === "en" ? "Website" : "サイト"}</p>
         </button>
       </Link>
     </div>

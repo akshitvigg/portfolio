@@ -1,10 +1,15 @@
 "use client"
+import { useLanguage } from "@/components/LanguageContext";
 import { Card } from "@/components/projectsCard";
 import { useState } from "react";
+import en from "../../components/locales/en.json"
+import jp from "../../components/locales/jp.json"
+
+const translations = { en, jp }
+
 
 const Projects = () => {
   const [category, setCategory] = useState<string>('all')
-
   const anitaroArr = ["Next.js", "Typescript", "TailwindCSS", "NextUI"];
   const secBrainarr = ["React", "Typescript", "TailwindCSS", "MongoDB"];
   const chitchat = ["React", "Typescript", "WebSockets"];
@@ -14,14 +19,14 @@ const Projects = () => {
   const solwallarr = ["React", "Typescript", "TailwindCSS", "ShadcnUI"];
   const ensoarr = ["Next.js", "Typescript", "TailwindCSS", "WebSocket"];
   const keyzenarr = ["Rust", "Tui"];
-
+  const { lang, toggleLang } = useLanguage()
   const projects = [
     {
       id: 1,
       category: "web2",
       src: "/anitaro.png",
       title: "アニタロ",
-      description: "A site where users can watch anime and read manga with a smooth and enjoyable experience. Built with a user-friendly interface for effortless content exploration.",
+      description: translations[lang].anitaroDesc,
       tools: anitaroArr,
       link: "https://anitaro.akshitt.me/"
     },
@@ -30,7 +35,7 @@ const Projects = () => {
       category: "web2",
       src: "/enso.png",
       title: "Enso",
-      description: "A collaborative whiteboard app for seamless real-time drawing and brainstorming. Designed with simplicity and teamwork in mind.",
+      description: translations[lang].ensoDesc,
       tools: ensoarr,
       link: "https://enso.akshitt.me/"
     },
@@ -39,7 +44,7 @@ const Projects = () => {
       category: "web2",
       src: "/secbrain.png",
       title: "SecondBrain",
-      description: "A site to save and organize content like YouTube videos, tweets, documents and more. share your 'brain' with friends to explore your collection.",
+      description: translations[lang].secondbrainDesc,
       tools: secBrainarr,
       link: "https://secondbrainn.netlify.app/"
     },
@@ -48,7 +53,7 @@ const Projects = () => {
       category: "web2",
       src: "/chitchat.png",
       title: "ChitChat",
-      description: "A real-time chat app with temporary rooms for seamless conversations. Its clean and simple UI ensures effortless communication and a smooth user experience",
+      description: translations[lang].chitchatDesc,
       tools: chitchat,
       link: "https://chitt-chatt.vercel.app/"
     },
@@ -57,7 +62,7 @@ const Projects = () => {
       category: "web2",
       src: "/bggone.png",
       title: "BgGone",
-      description: "A simple background removal tool that allows users to remove image backgrounds effortlessly.Features a clean and user-friendly interface for easy processing.",
+      description: translations[lang].bggoneDesc,
       tools: bggonearr,
       link: "https://bg-gone-rose.vercel.app/"
     },
@@ -66,7 +71,7 @@ const Projects = () => {
       category: "web3",
       src: "/sol.jpg",
       title: "Solana Wallet",
-      description: "Simple wallet adapter for seamless crypto transactions, offering secure authentication, smooth integration, and a user-friendly interface",
+      description: translations[lang].solanaDesc,
       tools: solwallarr,
       link: "https://sol-wallet-adapter.netlify.app/"
     },
@@ -75,7 +80,7 @@ const Projects = () => {
       category: "web2",
       src: "/astroquest.png",
       title: "AstroQuest",
-      description: "A fun web app that lets you explore the solar system with detailed planet info, smooth space animations, and a bot to help guide you on your cosmic journey",
+      description: translations[lang].astroDesc,
       tools: astroquestarr,
       link: "https://astroquest.netlify.app/"
     },
@@ -84,7 +89,7 @@ const Projects = () => {
       category: "terminal",
       src: "/keyzen.gif",
       title: "Keyzen",
-      description: "A typing test that runs in your terminal. Supports 35+ languages with real-time WPM and accuracy tracking for a minimal, focused experience.",
+      description: translations[lang].keyzenDesc,
       tools: keyzenarr,
       link: "https://github.com/akshitvigg/keyzen"
     }, {
@@ -92,7 +97,7 @@ const Projects = () => {
       category: "web2",
       src: "/pawpal.png",
       title: "PawPal",
-      description: "A simple pet adoption site where users can browse and adopt pets in need of a home. Features a user-friendly interface to explore available pets and their details.",
+      description: translations[lang].pawpalDesc,
       tools: pawpalarr,
       link: "https://paw-pal.netlify.app/"
     }
@@ -112,14 +117,14 @@ const Projects = () => {
   return (
     <div className="min-h-screen flex justify-center font-sans bg-white text-neutral-900 dark:bg-neutral-900 dark:text-white">
       <div>
-        <p className="text-2xl mt-8 flex font-bold justify-center">
-          Projects
-        </p>
+        <span className="text-2xl mt-8 flex font-bold justify-center">
+          {translations[lang].project}<button className=" translate-x-[385px] fixed" onClick={toggleLang}>{lang === "en" ? "JP" : "EN"}</button>
+        </span>
         <p className="tracking-wider pt-2 text-2xl sm:text-4xl font-bold justify-center flex">
-          Check out my latest work
+          {translations[lang].checkwork}
         </p>
         <p className="sm:text-xl text-lg sm:pl-0 sm:pr-0 pl-3 pr-3 pt-2 font-bold text-neutral-400 justify-center flex">
-          I've worked on a variety of projects, here are some that I like.
+          {translations[lang].workedOn}
         </p>
 
         <div className="flex justify-center">
