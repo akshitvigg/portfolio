@@ -1,4 +1,5 @@
 "use client";
+
 import { IconCloud } from "@/components/skillssphere";
 import Image from "next/image";
 import TechStackBtn from "@/components/skillschips";
@@ -14,8 +15,7 @@ import { useLanguage } from "@/components/LanguageContext";
 
 
 
-const slugs = [
-  "rust",
+const slugs = ["rust",
   "solidity",
   "flask",
   "tailwindcss",
@@ -64,41 +64,40 @@ export default function Home() {
   const { lang, toggleLang } = useLanguage()
 
   return (
-    <div className="  flex justify-center font-sans bg-white text-neutral-900  dark:bg-neutral-900 dark:text-white">
-      <div className=" w-[370px]  sm:w-[900px] min-h-screen ">
-        <div className="sm:pt-16 sm:pl-[84px]  items-center flex  ">
-          <div className="sm:pr-7 pl-3 sm:pl-0 pr-5  ">
+    <div className="flex justify-center font-sans bg-white text-neutral-900 dark:bg-neutral-900 dark:text-white">
+      <button
+        onClick={toggleLang}
+        className="fixed top-4 right-4 w-12 h-8 border border-neutral-300 dark:border-neutral-700 rounded overflow-hidden bg-white dark:bg-neutral-900 z-50"
+      >
+        <div className={`flex flex-col items-center transition-transform duration-500 ease-out ${lang === "en" ? "translate-y-0" : "-translate-y-8"}`}>
+          <span className="h-8 flex items-center justify-center text-sm font-bold w-full">EN</span>
+          <span className="h-8 flex items-center justify-center text-sm font-bold w-full">JP</span>
+        </div>
+      </button>
+
+      <div className="w-[370px] sm:w-[900px] min-h-screen">
+        <div className="sm:pt-16 sm:pl-[84px] items-center flex pt-16">
+          <div className="sm:pr-7 pl-3 sm:pl-0 pr-5 flex-shrink-0">
             <Image
-              className=" mb-10 sm:mb-0  rounded-full"
+              className="mb-10 sm:mb-0 rounded-full"
               src={"/cheng1.jpg"}
               alt="pfp"
               width={100}
-              height={300}
+              height={100}
+              style={{ width: '100px', height: '100px' }}
             />
           </div>
-          <div className="">
+          <div className="flex-1 pr-14 sm:pr-0">
             <div className="justify-between flex">
-              <p className="font-bold pt-4 sm:pt-0 text-4xl">{translations[lang].greeting}</p>
+              <p className="font-bold text-4xl break-words">{translations[lang].greeting}</p>
             </div>
 
-            <div className=" pt-2 pr-2 flex  sm:pr-0">
-              <p>{translations[lang].tagline}</p>
+            <div className="pt-2 flex">
+              <p className="break-words">{translations[lang].tagline}</p>
+            </div>
 
-
-
-
-
-              <button
-                onClick={toggleLang}
-                className="fixed top-4 right-4 sm:absolute sm:translate-x-[590px] sm:-translate-y-12 sm:top-auto sm:right-auto w-12 h-8 border border-neutral-300 dark:border-neutral-700 rounded overflow-hidden bg-white dark:bg-neutral-900 z-50"
-              >
-                <div className={`flex flex-col items-center transition-transform duration-500 ease-out ${lang === "en" ? "translate-y-0" : "-translate-y-8"}`}>
-                  <span className="h-8 flex items-center justify-center text-sm font-bold w-full">EN</span>
-                  <span className="h-8 flex items-center justify-center text-sm font-bold w-full">JP</span>
-                </div>
-              </button>           </div>
             <Snippet
-              className=" collapse sm:visible mt-1"
+              className="collapse sm:visible mt-1"
               tooltipProps={{
                 content: "Copy and run this on your terminal",
                 placement: "right",
@@ -108,8 +107,7 @@ export default function Home() {
               npx akshiro
             </Snippet>
           </div>
-        </div>
-        <p className="pl-3 sm:pt-10 sm:ml-[70px]  text-xl font-bold ">{translations[lang].aboutTitle}</p>
+        </div>        <p className="pl-3 sm:pt-10 sm:ml-[70px]  text-xl font-bold ">{translations[lang].aboutTitle}</p>
         <p className=" pl-3 pr-3 sm:ml-[70px] sm:pr-0 sm:w-[780px] text-justify text-neutral-500 dark:text-neutral-400">
           {translations[lang].aboutText}
         </p>
@@ -230,18 +228,18 @@ export default function Home() {
               {/*   projLink="https://astroquest.netlify.app/" */}
               {/* /> */}
               {/**/}
-              <p className="text-neutral-500  dark:text-neutral-400">
-                {lang === "en" ? <>checkout all of them{" "}
+              <div className="text-neutral-500  dark:text-neutral-400">
+                {lang === "en" ? <p className="text-sm sm:text-medium">checkout all of them{" "}
                   <Link href="/projects">
                     <span className="cursor-pointer underline text-neutral-600 hover:text-black dark:text-neutral-300 dark:hover:text-white">here</span>
                   </Link>
-                </> : <>全てのプロジェクトは{" "}
+                </p> : <div className=" text-sm sm:text-medium">全てのプロジェクトは{" "}
                   <Link href="/projects">
                     <span className="cursor-pointer underline text-neutral-600 hover:text-black dark:text-neutral-300 dark:hover:text-white">こちら</span>
                   </Link>
                   からご覧いただけます
-                </>}
-              </p>
+                </div>}
+              </div>
             </div>
           </div>
         </div>

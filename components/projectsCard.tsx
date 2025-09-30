@@ -30,7 +30,7 @@ export const Card = ({
         />
       </Link>
       <p className=" font-bold text-lg pt-1 pl-2">{projectTitle}</p>
-      <p className="text-sm text-neutral-500 dark:text-neutral-400 pt-1 pl-2">
+      <p className="sm:text-sm text-[15px]   text-neutral-500 dark:text-neutral-400 pt-1 pl-2">
         {description}
       </p>
       <div className="mt-2 flex">

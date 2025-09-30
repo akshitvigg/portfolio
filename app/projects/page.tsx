@@ -133,13 +133,15 @@ const Projects = () => {
         <span className="text-2xl mt-8 flex font-bold justify-center">
           {translations[lang].project}<button
             onClick={toggleLang}
-            className="fixed top-4 right-4 sm:absolute sm:translate-x-[380px] sm:-translate-y-0 sm:top-auto sm:right-auto w-12 h-8 border border-neutral-300 dark:border-neutral-700 rounded overflow-hidden bg-white dark:bg-neutral-900 z-50"
+            className="fixed top-4 right-4 w-12 h-8 border border-neutral-300 dark:border-neutral-700 rounded overflow-hidden bg-white dark:bg-neutral-900 z-50"
           >
             <div className={`flex flex-col items-center transition-transform duration-500 ease-out ${lang === "en" ? "translate-y-0" : "-translate-y-8"}`}>
               <span className="h-8 flex items-center justify-center text-sm font-bold w-full">EN</span>
               <span className="h-8 flex items-center justify-center text-sm font-bold w-full">JP</span>
             </div>
-          </button>        </span>
+          </button>
+
+        </span>
         <p className="tracking-wider pt-2 text-2xl sm:text-4xl font-bold justify-center flex">
           {translations[lang].checkwork}
         </p>
