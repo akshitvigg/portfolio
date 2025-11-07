@@ -4,6 +4,8 @@ import { Card } from "@/components/projectsCard";
 import { useState } from "react";
 import en from "../../components/locales/en.json"
 import jp from "../../components/locales/jp.json"
+import { title } from "process";
+import { link } from "fs";
 
 const translations = { en, jp }
 
@@ -20,6 +22,8 @@ const Projects = () => {
   const ensoarr = ["Next.js", "Typescript", "TailwindCSS", "WebSocket"];
   const keyzenarr = ["Rust", "Tui"];
   const gupshupai = ["Next.js", "Typescript", "TailwindCSS"]
+  const kaizenarr = ["Next.js", "Rust", "Solana", "Anchor"];
+
   const { lang, toggleLang } = useLanguage()
 
   const projects = [
@@ -43,6 +47,15 @@ const Projects = () => {
     },
     {
       id: 3,
+      category: "web3",
+      src: "/kaizen.jpg",
+      title: "Kaizen",
+      description: translations[lang].kaizenDesc,
+      tools: kaizenarr,
+      link: "https://kaizen-dun-eta.vercel.app/"
+    },
+    {
+      id: 4,
       category: "web2",
       src: "/secbrain.png",
       title: "SecondBrain",
@@ -52,7 +65,7 @@ const Projects = () => {
     },
 
     {
-      id: 4,
+      id: 5,
       category: "web2",
       src: "/gupshup.jpg",
       title: "GupShupAI",
@@ -61,7 +74,7 @@ const Projects = () => {
       link: "https://gupshup-ai.vercel.app/"
     },
     {
-      id: 5,
+      id: 6,
       category: "terminal",
       src: "/keyzen.gif",
       title: "Keyzen",
@@ -71,7 +84,7 @@ const Projects = () => {
     },
 
     {
-      id: 6,
+      id: 7,
       category: "web2",
       src: "/bggone.png",
       title: "BgGone",
@@ -80,7 +93,7 @@ const Projects = () => {
       link: "https://bg-gone-rose.vercel.app/"
     },
     {
-      id: 7,
+      id: 8,
       category: "web3",
       src: "/sol.jpg",
       title: "Solana Wallet",
@@ -88,7 +101,7 @@ const Projects = () => {
       tools: solwallarr,
       link: "https://sol-wallet-adapter.netlify.app/"
     }, {
-      id: 8,
+      id: 9,
       category: "web2",
       src: "/chitchat.png",
       title: "ChitChat",
@@ -97,7 +110,7 @@ const Projects = () => {
       link: "https://chitt-chatt.vercel.app/"
     },
     {
-      id: 9,
+      id: 10,
       category: "web2",
       src: "/astroquest.png",
       title: "AstroQuest",
@@ -106,7 +119,7 @@ const Projects = () => {
       link: "https://astroquest.netlify.app/"
     },
     {
-      id: 10,
+      id: 11,
       category: "web2",
       src: "/pawpal.png",
       title: "PawPal",

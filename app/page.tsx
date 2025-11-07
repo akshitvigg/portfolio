@@ -56,7 +56,7 @@ const solwallarr = ["React", "Typescript", "TailwindCSS", "ShadcnUI"];
 const ensoarr = ["Next.js", "Typescript", "TailwindCSS", "WebSocket"];
 const keyzenarr = ["Rust", "Tui"];
 const gupshupai = ["Next.js", "Typescript", "TailwindCSS"]
-
+const kaizenarr = ["Next.js", "Rust", "Solana", "Anchor"];
 const translations = { en, jp }
 
 
@@ -175,6 +175,13 @@ export default function Home() {
                 projLink="https://enso.akshitt.me/"
               />
               <Card
+                src={"/kaizen.jpg"}
+                projectTitle="Kaizen"
+                description={translations[lang].kaizenDesc}
+                toolsUsed={kaizenarr}
+                projLink="https://kaizen-dun-eta.vercel.app/"
+              />
+              <Card
                 src={"/secbrain.png"}
                 projectTitle="SecondBrain"
                 description={translations[lang].secondbrainDesc}
@@ -210,13 +217,6 @@ export default function Home() {
                 description={translations[lang].solanaDesc}
                 toolsUsed={solwallarr}
                 projLink="https://sol-wallet-adapter.netlify.app/"
-              />
-              <Card
-                src={"/chitchat.png"}
-                projectTitle="ChitChat"
-                description={translations[lang].chitchatDesc}
-                toolsUsed={chitchat}
-                projLink="https://chitt-chatt.vercel.app/"
               />
 
               {/**/}
