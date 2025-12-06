@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div className="flex-1 pr-14 sm:pr-0">
             <div className="justify-between flex">
-              <p className="font-bold text-4xl break-words">{translations[lang].greeting}</p>
+              <p className="font-bold  text-4xl break-words">{translations[lang].greeting}</p>
             </div>
 
             <div className="pt-2 flex">

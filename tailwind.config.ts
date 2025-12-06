@@ -1,3 +1,4 @@
+
 import { nextui } from "@nextui-org/theme";
 import type { Config } from "tailwindcss";
 
@@ -22,6 +23,7 @@ export default {
       },
       fontFamily: {
         sans: [
+          "SF Pro Display",
           "-apple-system",
           "BlinkMacSystemFont",
           '"San Francisco"',
@@ -34,5 +36,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), nextui(),],
+  plugins: [require("tailwindcss-animate"), nextui()],
 } satisfies Config;
