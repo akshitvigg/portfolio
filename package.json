@@ -39,5 +39,23 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@tanstack/react-virtual": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    },
+    "@nextui-org/system": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    },
+    "@nextui-org/select": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    },
+    "@nextui-org/react": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    }
   }
 }
