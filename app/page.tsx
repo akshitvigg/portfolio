@@ -80,7 +80,7 @@ export default function Home() {
           <div className="sm:pr-7 pl-3 sm:pl-0 pr-5 flex-shrink-0">
             <Image
               className="mb-10 sm:mb-0 rounded-full"
-              src={"/cheng1.jpg"}
+              src={"/randompfp.jpg"}
               alt="pfp"
               width={100}
               height={100}
