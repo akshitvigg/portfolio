@@ -1,7 +1,7 @@
 
 @font-face {
   font-family : "SF Pro Display";
-  src : url("/fonts/sfpro/SFPRODISPLAYREGULAR.otf") format("opentype");
+  src : url("/fonts/sfpro/SFPRODISPLAYREGULAR.OTF") format("opentype");
   font-weight:400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family : "SF Pro Display";
-  src : url("/fonts/sfpro/SFPRODISPLAYMEDIUM.otf") format("opentype");
+  src : url("/fonts/sfpro/SFPRODISPLAYMEDIUM.OTF") format("opentype");
   font-weight : 500;
   font-style:  normal;
   font-display : swap;
@@ -18,11 +18,13 @@
 
 @font-face {
   font-family : "SF Pro Display";
-  src : url("/fonts/sfpro/SFPRODISPLAYBOLD.otf") format("opentype");
+  src : url("/fonts/sfpro/SFPRODISPLAYBOLD.OTF") format("opentype");
   font-weight : 700; 
   font-style: normal;
   font-display:swap;
-}@tailwind base;
+}
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
