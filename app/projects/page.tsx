@@ -34,7 +34,7 @@ const Projects = () => {
       title: "アニタロ",
       description: translations[lang].anitaroDesc,
       tools: anitaroArr,
-      link: "https://anitaro.akshitt.me/"
+      link: "https://anim-gules.vercel.app/"
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ const Projects = () => {
       title: "Enso",
       description: translations[lang].ensoDesc,
       tools: ensoarr,
-      link: "https://enso.akshitt.me/"
+      link: "https://enso-beta.vercel.app/"
     },
     {
       id: 3,

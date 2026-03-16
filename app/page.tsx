@@ -165,14 +165,14 @@ export default function Home() {
                 projectTitle="アニタロ"
                 description={translations[lang].anitaroDesc}
                 toolsUsed={anitaroArr}
-                projLink="https://anitaro.akshitt.me/"
+                projLink="https://anim-gules.vercel.app/"
               />
               <Card
                 src={"/enso.png"}
                 projectTitle="Enso"
                 description={translations[lang].ensoDesc}
                 toolsUsed={ensoarr}
-                projLink="https://enso.akshitt.me/"
+                projLink="https://enso-beta.vercel.app/"
               />
               <Card
                 src={"/kaizen.jpg"}
