@@ -165,21 +165,21 @@ export default function Home() {
                 projectTitle="アニタロ"
                 description={translations[lang].anitaroDesc}
                 toolsUsed={anitaroArr}
-                projLink="https://anim-gules.vercel.app/"
+                projLink="https://anitaro.netlify.app/"
               />
               <Card
                 src={"/enso.png"}
                 projectTitle="Enso"
                 description={translations[lang].ensoDesc}
                 toolsUsed={ensoarr}
-                projLink="https://enso-beta.vercel.app/"
+                projLink="https://ensodraw.netlify.app/"
               />
               <Card
                 src={"/kaizen.jpg"}
                 projectTitle="Kaizen"
                 description={translations[lang].kaizenDesc}
                 toolsUsed={kaizenarr}
-                projLink="https://kaizen-dun-eta.vercel.app/"
+                projLink="https://kaizen-sol.netlify.app/"
               />
               <Card
                 src={"/secbrain.png"}
@@ -193,7 +193,7 @@ export default function Home() {
                 projectTitle="GupShupAI"
                 description={translations[lang].gupshupai}
                 toolsUsed={gupshupai}
-                projLink="https://gupshup-ai.vercel.app/"
+                projLink="https://gupshup-ai.netlify.app/"
               />
               <Card
                 src={"/keyzen.gif"}
@@ -209,7 +209,7 @@ export default function Home() {
                 projectTitle="BgGone"
                 description={translations[lang].bggoneDesc}
                 toolsUsed={bggonearr}
-                projLink="https://bg-gone-rose.vercel.app/"
+                projLink="https://bggon.netlify.app/"
               />
               <Card
                 src={"/sol.jpg"}

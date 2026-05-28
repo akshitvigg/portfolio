@@ -34,7 +34,7 @@ const Projects = () => {
       title: "アニタロ",
       description: translations[lang].anitaroDesc,
       tools: anitaroArr,
-      link: "https://anim-gules.vercel.app/"
+      link: "https://anitaro.netlify.app/"
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ const Projects = () => {
       title: "Enso",
       description: translations[lang].ensoDesc,
       tools: ensoarr,
-      link: "https://enso-beta.vercel.app/"
+      link: "https://ensodraw.netlify.app/"
     },
     {
       id: 3,
@@ -52,7 +52,7 @@ const Projects = () => {
       title: "Kaizen",
       description: translations[lang].kaizenDesc,
       tools: kaizenarr,
-      link: "https://kaizen-dun-eta.vercel.app/"
+      link: "https://kaizen-sol.vercel.app/"
     },
     {
       id: 4,
@@ -71,7 +71,7 @@ const Projects = () => {
       title: "GupShupAI",
       description: translations[lang].gupshupai,
       tools: gupshupai,
-      link: "https://gupshup-ai.vercel.app/"
+      link: "https://gupshup-ai.netlify.app/"
     },
     {
       id: 6,
@@ -90,7 +90,7 @@ const Projects = () => {
       title: "BgGone",
       description: translations[lang].bggoneDesc,
       tools: bggonearr,
-      link: "https://bg-gone-rose.vercel.app/"
+      link: "https://bggon.netlify.app/"
     },
     {
       id: 8,
@@ -107,7 +107,7 @@ const Projects = () => {
       title: "ChitChat",
       description: translations[lang].chitchatDesc,
       tools: chitchat,
-      link: "https://chitt-chatt.vercel.app/"
+      link: "https://chit-chattt.netlify.app/"
     },
     {
       id: 10,
