@@ -18,6 +18,7 @@
   "pawpalDesc": "A simple pet adoption site where users can browse and adopt pets in need of a home. Features a user-friendly interface to explore available pets and their details.",
   "gupshupai": "A web-based AI chatbot that lets users interact naturally, ask questions, and get instant responses. Built with a clean, intuitive interface for smooth conversation.",
   "kaizenDesc": "A focus dApp that turns discipline into a challenge — stake SOL, complete your session, and earn it back. Built to make focus real and accountability on-chain.",
+  "asvidDesc": "A terminal video player that renders local and YouTube videos as colored ASCII in real time. Supports smooth playback, seeking, and automatic terminal resizing.",
   "websiteBtn": "Website",
   "footer": "Made with ❤️ by Akshit"
 }

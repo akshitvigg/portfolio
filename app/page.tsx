@@ -57,6 +57,7 @@ const ensoarr = ["Next.js", "Typescript", "TailwindCSS", "WebSocket"];
 const keyzenarr = ["Rust", "Tui"];
 const gupshupai = ["Next.js", "Typescript", "TailwindCSS"]
 const kaizenarr = ["Next.js", "Rust", "Solana", "Anchor"];
+const asvidarr = ["Rust", "FFmpeg", "Crossterm", "yt-dlp"];
 const translations = { en, jp }
 
 
@@ -161,11 +162,11 @@ export default function Home() {
           <div className="sm:pl-7 pt-7  flex justify-center">
             <div className=" pb-5  dark:border-neutral-700  border-b-1 grid gap-3 grid-cols-1 sm:grid-cols-2">
               <Card
-                src={"/anitaro.png"}
-                projectTitle="アニタロ"
-                description={translations[lang].anitaroDesc}
-                toolsUsed={anitaroArr}
-                projLink="https://anitaro.netlify.app/"
+                src={"/naruto.png"}
+                projectTitle="Asvid"
+                description={translations[lang].asvidDesc}
+                toolsUsed={asvidarr}
+                projLink="https://github.com/akshitvigg/asvid/"
               />
               <Card
                 src={"/enso.png"}
@@ -174,6 +175,14 @@ export default function Home() {
                 toolsUsed={ensoarr}
                 projLink="https://ensodraw.netlify.app/"
               />
+              <Card
+                src={"/anitaro.png"}
+                projectTitle="アニタロ"
+                description={translations[lang].anitaroDesc}
+                toolsUsed={anitaroArr}
+                projLink="https://anitaro.netlify.app/"
+              />
+
               <Card
                 src={"/kaizen.jpg"}
                 projectTitle="Kaizen"
@@ -188,13 +197,7 @@ export default function Home() {
                 toolsUsed={secBrainarr}
                 projLink="https://secondbrainn.netlify.app/"
               />
-              <Card
-                src={"/gupshup.jpg"}
-                projectTitle="GupShupAI"
-                description={translations[lang].gupshupai}
-                toolsUsed={gupshupai}
-                projLink="https://gupshup-ai.netlify.app/"
-              />
+
               <Card
                 src={"/keyzen.gif"}
                 projectTitle="Keyzen"

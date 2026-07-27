@@ -4,8 +4,6 @@ import { Card } from "@/components/projectsCard";
 import { useState } from "react";
 import en from "../../components/locales/en.json"
 import jp from "../../components/locales/jp.json"
-import { title } from "process";
-import { link } from "fs";
 
 const translations = { en, jp }
 
@@ -23,20 +21,19 @@ const Projects = () => {
   const keyzenarr = ["Rust", "Tui"];
   const gupshupai = ["Next.js", "Typescript", "TailwindCSS"]
   const kaizenarr = ["Next.js", "Rust", "Solana", "Anchor"];
-
+  const asvidarr = ["Rust", "FFmpeg", "Crossterm", "yt-dlp"];
   const { lang, toggleLang } = useLanguage()
 
   const projects = [
     {
       id: 1,
-      category: "web2",
-      src: "/anitaro.png",
-      title: "アニタロ",
-      description: translations[lang].anitaroDesc,
-      tools: anitaroArr,
-      link: "https://anitaro.netlify.app/"
-    },
-    {
+      category: "terminal",
+      src: "/naruto.png",
+      title: "Asvid",
+      description: translations[lang].asvidDesc,
+      tools: asvidarr,
+      link: "https://github.com/akshitvigg/asvid/"
+    }, {
       id: 2,
       category: "web2",
       src: "/enso.png",
@@ -44,9 +41,18 @@ const Projects = () => {
       description: translations[lang].ensoDesc,
       tools: ensoarr,
       link: "https://ensodraw.netlify.app/"
-    },
-    {
+    }, {
       id: 3,
+      category: "web2",
+      src: "/anitaro.png",
+      title: "アニタロ",
+      description: translations[lang].anitaroDesc,
+      tools: anitaroArr,
+      link: "https://anitaro.netlify.app/"
+    },
+
+    {
+      id: 4,
       category: "web3",
       src: "/kaizen.jpg",
       title: "Kaizen",
@@ -55,7 +61,16 @@ const Projects = () => {
       link: "https://kaizen-sol.vercel.app/"
     },
     {
-      id: 4,
+      id: 5,
+      category: "terminal",
+      src: "/keyzen.gif",
+      title: "Keyzen",
+      description: translations[lang].keyzenDesc,
+      tools: keyzenarr,
+      link: "https://github.com/akshitvigg/keyzen"
+    },
+    {
+      id: 6,
       category: "web2",
       src: "/secbrain.png",
       title: "SecondBrain",
@@ -65,7 +80,7 @@ const Projects = () => {
     },
 
     {
-      id: 5,
+      id: 7,
       category: "web2",
       src: "/gupshup.jpg",
       title: "GupShupAI",
@@ -74,17 +89,7 @@ const Projects = () => {
       link: "https://gupshup-ai.netlify.app/"
     },
     {
-      id: 6,
-      category: "terminal",
-      src: "/keyzen.gif",
-      title: "Keyzen",
-      description: translations[lang].keyzenDesc,
-      tools: keyzenarr,
-      link: "https://github.com/akshitvigg/keyzen"
-    },
-
-    {
-      id: 7,
+      id: 8,
       category: "web2",
       src: "/bggone.png",
       title: "BgGone",
@@ -93,7 +98,7 @@ const Projects = () => {
       link: "https://bggon.netlify.app/"
     },
     {
-      id: 8,
+      id: 9,
       category: "web3",
       src: "/sol.jpg",
       title: "Solana Wallet",
@@ -101,7 +106,7 @@ const Projects = () => {
       tools: solwallarr,
       link: "https://sol-wallet-adapter.netlify.app/"
     }, {
-      id: 9,
+      id: 10,
       category: "web2",
       src: "/chitchat.png",
       title: "ChitChat",
@@ -110,7 +115,7 @@ const Projects = () => {
       link: "https://chit-chattt.netlify.app/"
     },
     {
-      id: 10,
+      id: 11,
       category: "web2",
       src: "/astroquest.png",
       title: "AstroQuest",
@@ -119,7 +124,7 @@ const Projects = () => {
       link: "https://astroquest.netlify.app/"
     },
     {
-      id: 11,
+      id: 12,
       category: "web2",
       src: "/pawpal.png",
       title: "PawPal",
