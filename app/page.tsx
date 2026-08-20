@@ -12,9 +12,6 @@ import en from "../components/locales/en.json"
 import jp from "../components/locales/jp.json"
 import { useLanguage } from "@/components/LanguageContext";
 
-
-
-
 const slugs = ["rust",
   "solidity",
   "flask",
