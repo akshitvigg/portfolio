@@ -86,8 +86,17 @@ export default function Home() {
             />
           </div>
           <div className="flex-1 pr-14 sm:pr-0">
-            <div className="justify-between flex">
-              <p className="font-bold  text-4xl break-words">{translations[lang].greeting}</p>
+            <div className="flex justify-between">
+              <p className="font-bold text-4xl break-words flex flex-wrap items-center gap-x-3 gap-y-2">
+                {translations[lang].greeting}
+                <span className="inline-flex items-center gap-2 text-xs font-medium text-neutral-600 dark:text-neutral-300 bg-neutral-100 dark:bg-neutral-800 px-3 py-1.5 rounded-full shrink-0">
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75 animate-ping"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                  </span>
+                  Open to work
+                </span>
+              </p>
             </div>
 
             <div className="pt-2 flex">
