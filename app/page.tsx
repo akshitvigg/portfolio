@@ -7,7 +7,7 @@ import { Card } from "@/components/projectsCard";
 import { Snippet } from "@nextui-org/snippet";
 import GithubContributions from "@/components/githubcontri";
 import Link from "next/link";
-import { useState } from "react";
+// import { useState } from "react";
 import en from "../components/locales/en.json"
 import jp from "../components/locales/jp.json"
 import { useLanguage } from "@/components/LanguageContext";
